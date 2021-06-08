@@ -63,107 +63,109 @@ activity4.photo.attach(io: file, filename: url4, content_type: 'image/jpg')
 activity4.save!
 
 
-puts "finished seeds"
 
 # # 5 activity
 url5 = "https://res.cloudinary.com/dseegocw7/image/upload/v1623153973/japanese_ohf1bi.jpg"
-activity = Activity.create!(
+activity5 = Activity.create!(
  title: "Learn Japanese language",
  start_date: Date.today + 21,
  end_date: Date.today + 21,
  location: "Lapa, Lisbon",
  )
-file = URI.open(url)
+file = URI.open(url5)
 activity5.photo.attach(io: file, filename: url5, content_type: 'image/jpg')
 activity5.save!
 
 
 # # 6 activity
-# url = "https://res.cloudinary.com/dseegocw7/image/upload/v1623153973/foodie_c3737h.jpg"
-# activity = Activity.create!(
-#    title: "Tipsy Foodies in Lisbon",
-#    start_date: Date.today + 26,
-#    end_date: Date.today + 26,
-#    location: "Bairro Alto, Lisbon",
-#   )
-# file = URI.open(url)
-# activity.photo.attach(io: file, filename: url, content_type: 'image/jpg')
-# activity.save!
+url6 = "https://res.cloudinary.com/dseegocw7/image/upload/v1623153973/foodie_c3737h.jpg"
+activity6 = Activity.create!(
+ title: "Tipsy Foodies in Lisbon",
+ start_date: Date.today + 26,
+ end_date: Date.today + 26,
+ location: "Bairro Alto, Lisbon",
+)
+file = URI.open(url6)
+activity6.photo.attach(io: file, filename: url6, content_type: 'image/jpg')
+activity6.save!
 
 # # 7 activity
-# url = "https://res.cloudinary.com/dseegocw7/image/upload/v1623159541/mason-dahl--7AxXbZekDE-unsplash_gpyemx.jpg"
-# activity = Activity.create!(
-#    title: "Friday Evening Late Picnic",
-#    start_date: Date.today + 2,
-#    end_date: Date.today + 2,
-#    location: "Estrela, Lisbon",
-#   )
-# file = URI.open(url)
-# activity.photo.attach(io: file, filename: url, content_type: 'image/jpg')
-# activity.save!
+url7 = "https://res.cloudinary.com/dseegocw7/image/upload/v1623159541/mason-dahl--7AxXbZekDE-unsplash_gpyemx.jpg"
+activity7 = Activity.create!(
+title: "Friday Evening Late Picnic",
+start_date: Date.today + 2,
+end_date: Date.today + 2,
+location: "Estrela, Lisbon",
+)
+file = URI.open(url7)
+activity7.photo.attach(io: file, filename: url7, content_type: 'image/jpg')
+activity7.save!
 
 
 # # 8 activity
-# url = "https://res.cloudinary.com/dseegocw7/image/upload/v1623153972/volley_osqdrr.jpg"
-# activity = Activity.create!(
-#    title: "Grass Volleyball",
-#    start_date: Date.today + 8,
-#    end_date: Date.today + 8,
-#    location: "Carcavellos, Lisbon",
-#   )
-# file = URI.open(url)
-# activity.photo.attach(io: file, filename: url, content_type: 'image/jpg')
-# activity.save!
+url8 = "https://res.cloudinary.com/dseegocw7/image/upload/v1623153972/volley_osqdrr.jpg"
+activity8 = Activity.create!(
+title: "Grass Volleyball",
+start_date: Date.today + 8,
+end_date: Date.today + 8,
+location: "Carcavellos, Lisbon",
+)
+file = URI.open(url8)
+activity8.photo.attach(io: file, filename: url8, content_type: 'image/jpg')
+activity8.save!
 
 
 # # 9 activity
-# url = "https://res.cloudinary.com/dseegocw7/image/upload/v1623153972/picnic_yqlzjb.jpg"
-#    activity = Activity.create!(
-#    title: "Pilates Mat outdoors",
-#    start_date: Date.today + 10,
-#    end_date: Date.today + 10,
-#    location: "Caparica, Lisbon",
-#   )
-# file = URI.open(url)
-# activity.photo.attach(io: file, filename: url, content_type: 'image/jpg')
-# activity.save!
+url9 = "https://res.cloudinary.com/dseegocw7/image/upload/v1623153972/picnic_yqlzjb.jpg"
+activity9 = Activity.create!(
+title: "Pilates Mat outdoors",
+start_date: Date.today + 10,
+end_date: Date.today + 10,
+location: "Caparica, Lisbon",
+)
+file = URI.open(url9)
+activity9.photo.attach(io: file, filename: url9, content_type: 'image/jpg')
+activity9.save!
 
 
 # # 10 activity
-# url = "https://res.cloudinary.com/dseegocw7/image/upload/v1623153972/surf_q0dip5.jpg"
-#    activity = Activity.create!(
-#    title: "Let´s go surfing on the weekend !",
-#    start_date:  Date.today + 9,
-#    end_date:  Date.today + 9,
-#    location: "Rato, Lisbon",
-#   )
-# file = URI.open(url)
-# activity.photo.attach(io: file, filename: url, content_type: 'image/jpg')
-# activity.save!
+url10 = "https://res.cloudinary.com/dseegocw7/image/upload/v1623153972/surf_q0dip5.jpg"
+activity10 = Activity.create!(
+title: "Let´s go surfing on the weekend !",
+start_date:  Date.today + 9,
+end_date:  Date.today + 9,
+location: "Rato, Lisbon",
+)
+file = URI.open(url10)
+activity10.photo.attach(io: file, filename: url10, content_type: 'image/jpg')
+activity10.save!
 
 
 
 # # 11 activity
-# url = "https://res.cloudinary.com/dseegocw7/image/upload/v1623153972/cinema_mpnxah.jpg"
-#    activity = Activity.create!(
-#    title: "Movie night",
-#    start_date:  Date.today + 24,
-#    end_date:   Date.today + 24,
-#    location: "Santos, Lisbon",
-#   )
-# file = URI.open(url)
-# activity.photo.attach(io: file, filename: url, content_type: 'image/jpg')
-# activity.save!
+url11 = "https://res.cloudinary.com/dseegocw7/image/upload/v1623153972/cinema_mpnxah.jpg"
+activity11 = Activity.create!(
+title: "Movie night",
+start_date:  Date.today + 24,
+end_date:   Date.today + 24,
+location: "Santos, Lisbon",
+)
+file = URI.open(url11)
+activity11.photo.attach(io: file, filename: url11, content_type: 'image/jpg')
+activity11.save!
 
 
 # # 12 activity
-# url = "https://res.cloudinary.com/dseegocw7/image/upload/v1623153972/concert_dnikxz.jpg"
-#      activity = Activity.create!(
-#    title: "Thursday Night Weekly Jam",
-#    start_date:  Date.today + 27,
-#    end_date:  Date.today + 27,
-#    location: "Santos, Lisbon",
-#   )
-# file = URI.open(url)
-# activity.photo.attach(io: file, filename: url, content_type: 'image/jpg')
-# activity.save!
+url12 = "https://res.cloudinary.com/dseegocw7/image/upload/v1623153972/concert_dnikxz.jpg"
+activity12 = Activity.create!(
+title: "Thursday Night Weekly Jam",
+start_date:  Date.today + 27,
+end_date:  Date.today + 27,
+location: "Santos, Lisbon",
+)
+file = URI.open(url12)
+activity12.photo.attach(io: file, filename: url12, content_type: 'image/jpg')
+activity12.save!
+
+
+puts "finished seeds"

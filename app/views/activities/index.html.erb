@@ -9,10 +9,10 @@
      <%= cl_image_tag(activity.photo.key,width: 350, height: 200, crop: :fill) %>
       <div class="body-card d-flex">
         <div>
-          <p class="para"> <%= activity.title %> </p>
+          <p class="title"> <%= activity.title %> </p>
           <p class="para"> <%= activity.location %></p>
        </div>
-       <p> Start in : <%=( activity.start_date - Date.today).to_i %> days </p>
+       <p class="para"> Start in : <%=( activity.start_date - Date.today).to_i %> days </p>
       </div>
     </div>
   </div>
