@@ -1,0 +1,37 @@
+.home-banner {
+  background-image: asset-url("home-banner-2.jpg");
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-text {
+  text-align: center;
+  padding: 50px 0;
+  padding-bottom: 50px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.btn-primary {
+  color: white;
+  border-radius: 10px;
+  border:none;
+  padding: 10px 15px;
+
+}
+
+.btn:hover {
+ background-color:#ce9a4c;
+ opacity: 0.5;
+}
+
+h2 {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
