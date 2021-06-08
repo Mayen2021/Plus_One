@@ -3,15 +3,19 @@
 
 <div class="container">
 <div class="row">
-
-<% @activities.each do |activity| %>
-
-<div class="card-category">
-  <%= cl_image_tag(activity.photo.key,width: 400, height: 300, crop: :fill) %>
-  <%= activity.title %>
+  <% @activities.each do |activity| %>
+  <div class="card-category col-4">
+    <div class="m-3">
+     <%= cl_image_tag(activity.photo.key,width: 350, height: 200, crop: :fill) %>
+      <div class="body-card d-flex">
+        <div>
+          <p class="para"> <%= activity.title %> </p>
+          <p class="para"> <%= activity.location %></p>
+       </div>
+       <p> Start in : <%=( activity.start_date - Date.today).to_i %> days </p>
+      </div>
+    </div>
+  </div>
   <% end %>
-   </div>
-</div>
-
 </div>
 </div>
