@@ -73,8 +73,8 @@ ActiveRecord::Schema.define(version: 2021_06_08_140208) do
   create_table "reviews", force: :cascade do |t|
     t.text "comment"
     t.integer "rating"
-    t.bigint "user_id", null: false
-    t.bigint "activity_id", null: false
+    t.bigint "user_id"
+    t.bigint "activity_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["activity_id"], name: "index_reviews_on_activity_id"

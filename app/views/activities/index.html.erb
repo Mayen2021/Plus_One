@@ -1,0 +1,17 @@
+
+<h1> Activities near your </h1>
+
+<div class="container">
+<div class="row">
+
+<% @activities.each do |activity| %>
+
+<div class="card-category">
+  <%= cl_image_tag(activity.photo.key,width: 400, height: 300, crop: :fill) %>
+  <%= activity.title %>
+  <% end %>
+   </div>
+</div>
+
+</div>
+</div>
