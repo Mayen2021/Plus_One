@@ -17,8 +17,17 @@
   font-weight: bold;
 }
 
-.activity-title{
-  margin-left: 107px;
+.activity-title {
+    margin-left: 107px;
+    margin-top: 61px;
+}
+
+
+.activity-title-map {
+   margin-left: 107px;
+    margin-top: 61px;
+    padding-bottom: 20px;
+
 }
 
 h5 {
@@ -34,13 +43,14 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px 0 20px 107px;
+  margin: 15px 0 20px 107px;
   color: white;
   font-size: 24px;
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+
 }
 
 
@@ -48,8 +58,7 @@ h5 {
   background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2));
 }
 
-#theme {
-margin-left : 10px 107px
-
-
+.background-color {
+  height: 430px;
+  background-color: #fff8f4;
 }
