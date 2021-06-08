@@ -12,8 +12,10 @@
 
     <ul class="navbar-nav mr-auto">
       <% if user_signed_in? %>
-        <%= link_to profile_path(current_user.profile) do %>
-          <h1>activity</h1>
+        <% if current_user.profile.present? %>
+          <%= link_to profile_path(current_user.profile) do %>
+            <h1>activity</h1>
+          <% end %>
         <% end %>
         <%= link_to destroy_user_session_path, method: :delete do %>
         <h1>Log out</h1>

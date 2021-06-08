@@ -9,6 +9,12 @@ class ProfilesController < ApplicationController
 
 
   def create
+    #params
+    #new
+    #save
+    #profile.user = current_user
+
+    redirect_to activities_path
 
   end
 end
