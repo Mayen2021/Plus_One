@@ -7,7 +7,7 @@
 }
 
 .body-card.d-flex {
-  background-color: #FDEEDD;
+  background-color: #fff3ed;
   width: 350px;
   justify-content: space-between;
   padding: 8px;
@@ -24,4 +24,32 @@
 h5 {
   color: #023047;
    margin-left: 107px;
+}
+
+.card-category-theme {
+  background-size: cover;
+  background-position: center;
+  height: 130px;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 20px 107px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+
+.card-category-theme:hover{
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2));
+}
+
+#theme {
+margin-left : 10px 107px
+
+
 }
