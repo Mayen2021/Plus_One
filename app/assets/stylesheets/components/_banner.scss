@@ -29,16 +29,14 @@
  opacity: 0.5;
 }
 
-h2 {
+.wrap {
+   font-family: 'Open Sans', sans-serif;
+   font-size: 22px;
+   color: white;
+}
+
+#banner-heading {
   color: white;
   font-weight: bold;
+  font-family: 'Roboto', sans-serif;
 }
-
-p {
-  color: white;
-}
-
-.wrap {
- word-break: break-all;
-}
-

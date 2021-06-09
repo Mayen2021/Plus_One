@@ -5,9 +5,6 @@
   position: sticky;
   top:0;
   z-index: 1;
-  //flex-direction: row-reverse;
-  // background: white;
-  // border: 1px solid #fff8f4;
 }
 
 
@@ -23,6 +20,7 @@
     z-index: 1;
     height: 38px;
 }
+
 .navbar-brand img {
   height: 173px;
   margin-top: 10px;
@@ -31,10 +29,6 @@
 
 .collapse .navbar-collapse ul li{
   display: inline;
-}
-
-
-.navbar .navbar-expand-sm {
 }
 
 
