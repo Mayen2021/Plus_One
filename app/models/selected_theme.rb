@@ -1,3 +1,3 @@
 class SelectedTheme < ApplicationRecord
-  belong_to :profile
+  belongs_to :profile
 end
