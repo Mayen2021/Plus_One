@@ -8,6 +8,7 @@
 require "open-uri"
 
 Activity.destroy_all
+Theme.destroy_all
 
 puts "create the themes"
 
