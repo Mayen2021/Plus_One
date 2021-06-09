@@ -6,6 +6,25 @@
   </div>
 </div>
 
+    <div class="container my-3">
+<div class="row">
+  <% @activities.each do |activity| %>
+  <div class="card-category col-4">
+    <div class="m-4">
+     <%= cl_image_tag(activity.photo.key,width: 350, height: 200, crop: :fill) %>
+      <div class="body-card d-flex">
+        <div>
+          <p class="title"> <%= activity.title %> </p>
+          <p class="para"> <%= activity.location %></p>
+       </div>
+       <p class="para"> Start in : <%=( activity.start_date - Date.today).to_i %> days </p>
+      </div>
+    </div>
+  </div>
+  <% end %>
+</div>
+</div>
+
     <div class="full-container">
       <div><h2 id="container-header">Getting started</h2></div>
       <div class="cards">
