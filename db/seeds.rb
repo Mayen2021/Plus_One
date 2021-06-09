@@ -34,7 +34,7 @@ activity1 = Activity.create(
    title: "A Unique Hike",
    start_date: Date.today + 23,
    end_date: Date.today + 24,
-   location: "Sintra",
+   location: "Rua das Flores 41 43, 1200-193 Lisboa",
    theme: sport
   )
 puts "one created"
@@ -49,7 +49,7 @@ activity2 = Activity.create!(
    title: "Friday Drinks",
    start_date: Date.today + 9,
    end_date:  Date.today + 9,
-   location: "Bairro Alto, Lisbon",
+   location: "Rua de S. Paulo 136, 1200-429 Lisboa",
    theme: drinks
   )
 
@@ -64,7 +64,7 @@ activity3 = Activity.create!(
    title: "Free dance class",
    start_date:  Date.today + 13,
    end_date: Date.today + 13,
-   location: "Cais do Sodre, Lisbon",
+   location: "R. dos Remolares 34, 1200-371 Lisboa",
    theme: dance
   )
 file = URI.open(url3)
@@ -77,7 +77,7 @@ activity4 = Activity.create!(
    title: "Saturday yoga",
    start_date: Date.today + 16,
    end_date:  Date.today + 16,
-   location: "Santos, Lisbon",
+   location: "R. Gaivotas 17, 1200-719 Lisboa",
    theme: wellness
   )
 file = URI.open(url4)
@@ -92,7 +92,7 @@ activity5 = Activity.create!(
  title: "Learn Japanese language",
  start_date: Date.today + 21,
  end_date: Date.today + 21,
- location: "Lapa, Lisbon",
+ location: "R. Santos-O-Velho 2 e 4, 1200-109 Lisboa",
  theme: language_exchange
  )
 file = URI.open(url5)
@@ -106,7 +106,7 @@ activity6 = Activity.create!(
  title: "Tipsy Foodies in Lisbon",
  start_date: Date.today + 26,
  end_date: Date.today + 26,
- location: "Bairro Alto, Lisbon",
+ location: "R. Nova da Piedade 10, 1200-192 Lisboa",
  theme: food
 )
 file = URI.open(url6)
@@ -119,7 +119,7 @@ activity7 = Activity.create!(
 title: "Friday Evening Late Picnic",
 start_date: Date.today + 2,
 end_date: Date.today + 2,
-location: "Estrela, Lisbon",
+location: "R. das Flores de Santa Cruz 2, 1100-129 Lisboa",
 theme: outdoor
 )
 file = URI.open(url7)
@@ -133,7 +133,7 @@ activity8 = Activity.create!(
 title: "Grass Volleyball",
 start_date: Date.today + 8,
 end_date: Date.today + 8,
-location: "Carcavellos, Lisbon",
+location: "R. de São Bento 239, 1250-026 Lisboa",
 theme: sport
 )
 file = URI.open(url8)
@@ -147,7 +147,7 @@ activity9 = Activity.create!(
 title: "Pilates Mat outdoors",
 start_date: Date.today + 10,
 end_date: Date.today + 10,
-location: "Caparica, Lisbon",
+location: "2825-412 Costa da Caparica",
 theme: wellness
 )
 file = URI.open(url9)
@@ -161,7 +161,7 @@ activity10 = Activity.create!(
 title: "Let´s go surfing on the weekend !",
 start_date:  Date.today + 9,
 end_date:  Date.today + 9,
-location: "Rato, Lisbon",
+location: "2825-412 Costa da Caparica",
 theme: sport
 )
 file = URI.open(url10)

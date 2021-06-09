@@ -3,8 +3,7 @@
 
 <h4 class="activity-title-map"> Get inspired</h4>
 
-
-<div class="background-color">
+<div class="map-card-layout">
       <div id="theme">
         <div class="card-category-theme"  style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
         url(<%= asset_path('drinks.jpg') %>);">
@@ -20,10 +19,31 @@
         ART
       </div>
       </div>
+       <div id="map"
+           style="height: 400px;"
+           data-markers="<%= @markers.to_json %>"
+           data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+      </div>
 </div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h4 class="activity-title"> Activities near your </h4>
+
 <h4 class="activity-title"> Activities near you </h4>
+
 <h5> Lisbon </h5>
 
 <div class="container">
@@ -34,7 +54,7 @@
      <%= cl_image_tag(activity.photo.key,width: 350, height: 200, crop: :fill) %>
       <div class="body-card d-flex">
         <div>
-          <p class="title"> <%= activity.title %> </p>
+          <p class="title-card"> <%= activity.title %> </p>
           <p class="para"> <%= activity.location %></p>
        </div>
        <p class="para"> Start in : <%=( activity.start_date - Date.today).to_i %> days </p>
@@ -44,3 +64,5 @@
   <% end %>
 </div>
 </div>
+
+
