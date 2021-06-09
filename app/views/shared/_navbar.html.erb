@@ -1,7 +1,7 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon d-flex">
   <div class="logo">
     <%= link_to root_path, class: "navbar-brand" do %>
-    <%= image_tag "real_logo.png" %>
+    <%= image_tag "logo.png" %>
     <% end %>
   </div>
   <div class="collapse navbar-collapse flex-nav" id="navbarSupportedContent">
@@ -9,11 +9,11 @@
       <% if user_signed_in? %>
         <% if current_user.profile.present? %>
           <%= link_to profile_path(current_user.profile) do %>
-            <h1>activity</h1>
+            <p>activity</p>
           <% end %>
         <% end %>
         <%= link_to destroy_user_session_path, method: :delete do %>
-        <h1>Log out</h1>
+        <p>Log out</p>
         <% end %>
         <% else %>
           <%= link_to "JOIN NOW", new_user_registration_path , class: "nav-link btn btn-primary" %>

@@ -9,7 +9,22 @@ require "open-uri"
 
 Activity.destroy_all
 
+puts "create the themes"
+
+sport = Theme.create(name:"sport")
+art = Theme.create(name:"art")
+drinks = Theme.create(name:"drinks")
+nightlife = Theme.create(name:"nightlife")
+language_exchange = Theme.create(name:"language exchange")
+wellness = Theme.create(name:"wellness")
+entertainment = Theme.create(name:"entertainment")
+dance = Theme.create(name:"dance")
+food = Theme.create(name:"food")
+outdoor = Theme.create(name:"outdoor")
+
+
 puts "creating activities..."
+
 
 # 1st activity
 url1 = "https://res.cloudinary.com/dseegocw7/image/upload/v1623153975/hikes_jkh2hd.jpg"
@@ -18,8 +33,10 @@ activity1 = Activity.create(
    title: "A Unique Hike",
    start_date: Date.today + 23,
    end_date: Date.today + 24,
-   location: "Sintra"
+   location: "Sintra",
+   theme: sport
   )
+puts "one created"
 file = URI.open(url1)
 activity1.photo.attach(io: file, filename: url1, content_type: 'image/jpg')
 activity1.save!
@@ -32,7 +49,9 @@ activity2 = Activity.create!(
    start_date: Date.today + 9,
    end_date:  Date.today + 9,
    location: "Bairro Alto, Lisbon",
+   theme: drinks
   )
+
 file = URI.open(url2)
 activity2.photo.attach(io: file, filename: url2, content_type: 'image/jpg')
 activity2.save!
@@ -45,6 +64,7 @@ activity3 = Activity.create!(
    start_date:  Date.today + 13,
    end_date: Date.today + 13,
    location: "Cais do Sodre, Lisbon",
+   theme: dance
   )
 file = URI.open(url3)
 activity3.photo.attach(io: file, filename: url3, content_type: 'image/jpg')
@@ -57,6 +77,7 @@ activity4 = Activity.create!(
    start_date: Date.today + 16,
    end_date:  Date.today + 16,
    location: "Santos, Lisbon",
+   theme: wellness
   )
 file = URI.open(url4)
 activity4.photo.attach(io: file, filename: url4, content_type: 'image/jpg')
@@ -71,6 +92,7 @@ activity5 = Activity.create!(
  start_date: Date.today + 21,
  end_date: Date.today + 21,
  location: "Lapa, Lisbon",
+ theme: language_exchange
  )
 file = URI.open(url5)
 activity5.photo.attach(io: file, filename: url5, content_type: 'image/jpg')
@@ -84,6 +106,7 @@ activity6 = Activity.create!(
  start_date: Date.today + 26,
  end_date: Date.today + 26,
  location: "Bairro Alto, Lisbon",
+ theme: food
 )
 file = URI.open(url6)
 activity6.photo.attach(io: file, filename: url6, content_type: 'image/jpg')
@@ -96,6 +119,7 @@ title: "Friday Evening Late Picnic",
 start_date: Date.today + 2,
 end_date: Date.today + 2,
 location: "Estrela, Lisbon",
+theme: outdoor
 )
 file = URI.open(url7)
 activity7.photo.attach(io: file, filename: url7, content_type: 'image/jpg')
@@ -109,6 +133,7 @@ title: "Grass Volleyball",
 start_date: Date.today + 8,
 end_date: Date.today + 8,
 location: "Carcavellos, Lisbon",
+theme: sport
 )
 file = URI.open(url8)
 activity8.photo.attach(io: file, filename: url8, content_type: 'image/jpg')
@@ -122,6 +147,7 @@ title: "Pilates Mat outdoors",
 start_date: Date.today + 10,
 end_date: Date.today + 10,
 location: "Caparica, Lisbon",
+theme: wellness
 )
 file = URI.open(url9)
 activity9.photo.attach(io: file, filename: url9, content_type: 'image/jpg')
@@ -135,6 +161,7 @@ title: "Let´s go surfing on the weekend !",
 start_date:  Date.today + 9,
 end_date:  Date.today + 9,
 location: "Rato, Lisbon",
+theme: sport
 )
 file = URI.open(url10)
 activity10.photo.attach(io: file, filename: url10, content_type: 'image/jpg')
@@ -149,6 +176,7 @@ title: "Movie night",
 start_date:  Date.today + 24,
 end_date:   Date.today + 24,
 location: "Santos, Lisbon",
+theme: entertainment
 )
 file = URI.open(url11)
 activity11.photo.attach(io: file, filename: url11, content_type: 'image/jpg')
@@ -162,6 +190,7 @@ title: "Thursday Night Weekly Jam",
 start_date:  Date.today + 27,
 end_date:  Date.today + 27,
 location: "Santos, Lisbon",
+theme: entertainment
 )
 file = URI.open(url12)
 activity12.photo.attach(io: file, filename: url12, content_type: 'image/jpg')
