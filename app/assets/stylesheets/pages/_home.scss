@@ -1,19 +1,17 @@
 .card {
-  height: 150px;
-  border-radius: 1px;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
   justify-content: space-around;
-  font-size: 18px;
-  color: black;
-  font-weight: bolder;
-  text-shadow: 0 0 10px rgba(0,0,0,0.7);
 }
+
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 35px;
+  grid-gap: 60px;
   justify-items: center;
   align-items: center;
 }
@@ -37,6 +35,39 @@
 }
 
 .full-container {
-  display: flex;
   padding: 80px;
+}
+
+.card .action-text {
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+  color: #023047;
+  opacity: 0.7;
+  margin-bottom: 60px;
+  width: 80%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.card .action-header {
+  font-size: 20px;
+  color: #023047;
+  font-weight: bolder;
+  font-family: 'Roboto', sans-serif;
+}
+
+.icon {
+  font-size: 40px;
+  color: #FB8500;
+  opacity: 0.7;
+  text-align: center;
+}
+
+#container-header {
+  text-align: center;
+  padding-bottom: 25px;
+  color: #023047;
+  font-family: 'Roboto', sans-serif;
+  opacity: 0.8;
+
 }
