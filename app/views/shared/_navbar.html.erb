@@ -9,7 +9,7 @@
       <% if user_signed_in? %>
         <% if current_user.profile.present? %>
           <%= link_to profile_path(current_user.profile) do %>
-            <p>activity</p>
+
           <% end %>
         <% end %>
         <%= link_to destroy_user_session_path, method: :delete do %>
