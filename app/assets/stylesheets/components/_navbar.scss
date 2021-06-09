@@ -1,12 +1,10 @@
 .navbar-lewagon {
   justify-content: space-between;
+  justify-content: space-around;
   background: #F0EFEB;
   position: sticky;
   top:0;
   z-index: 1;
-  //flex-direction: row-reverse;
-  // background: white;
-  // border: 1px solid #fff8f4;
 }
 
 
@@ -14,13 +12,18 @@
   flex: none;
 }
 
-.navbar-lewagon .navbar-collapse {
-
+.navbar-lewagon {
+    justify-content: space-between;
+    background: #F0EFEB;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 38px;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 90px;
-  height: 20px;
+.navbar-brand img {
+  height: 173px;
+  margin-top: 10px;
   border: none;
 }
 
@@ -28,9 +31,6 @@
   display: inline;
 }
 
-
-.navbar .navbar-expand-sm {
-}
 
 .nav-item {
   text-align: center;

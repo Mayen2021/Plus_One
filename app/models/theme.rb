@@ -1,5 +1,3 @@
 class Theme < ApplicationRecord
-  belongs_to :activity
-  belongs_to :booking
-
+  has_many :activities
 end

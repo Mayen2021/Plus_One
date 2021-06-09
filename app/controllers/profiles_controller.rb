@@ -11,11 +11,11 @@ class ProfilesController < ApplicationController
   def create
 
     #new
-    @profile = Profile.new(profile_params)
+    @profile = Profile.new(profiles_params)
     #save
     @profile.user = current_user
 
-    if @profile.saved
+    if @profile.save
 
       redirect_to activities_path, alert: "Profile created!"
 
