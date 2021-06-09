@@ -1,7 +1,17 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: white;
-  border: 1px solid #fff8f4;
+  background: #F0EFEB;
+  position: sticky;
+  top:0;
+  z-index: 1;
+  //flex-direction: row-reverse;
+  // background: white;
+  // border: 1px solid #fff8f4;
+}
+
+
+.flex-nav{
+  flex: none;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -9,8 +19,19 @@
 }
 
 .navbar-lewagon .navbar-brand img {
-  width: 40px;
+  width: 90px;
+  height: 25px;
+  border: none;
 }
+
+.collapse .navbar-collapse ul li{
+  display: inline;
+}
+
+
+.navbar .navbar-expand-sm {
+}
+
 
 
 .nav-item {

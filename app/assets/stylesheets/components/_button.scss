@@ -1,0 +1,30 @@
+.btn-primary {
+  text-decoration: none;
+  background-color: #FCA94C;
+  border-radius: 10px;
+  border:none;
+  padding: 10px 15px;
+  a {
+    color: white;
+  }
+}
+
+.btn:hover {
+ background-color: #FB8500;
+ opacity: 0.5;
+}
+
+.btn-ghost {
+  color: white;
+  background-color: #e1e1e1;
+  border: 1px solid #4A4A4A;
+  padding: 8px 24px;
+  border-radius: 10px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  a {
+    color: white;
+  }
+}
+

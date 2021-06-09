@@ -1,10 +1,42 @@
-body {
-    margin: 0;
-    font-family: "Work Sans", "Helvetica", "sans-serif";
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #FB8500;
-    text-align: left;
-    background-color: #ffffff;
-}// Specific CSS for your home-page
+.card {
+  height: 150px;
+  border-radius: 1px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 18px;
+  color: black;
+  font-weight: bolder;
+  text-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 35px;
+  justify-items: center;
+  align-items: center;
+}
+
+@media (max-width: 960px) {
+.cards {
+  grid-template-columns: 1fr 1fr 1fr
+}
+}
+
+@media (max-width: 720px) {
+.cards {
+  grid-template-columns: 1fr 1fr
+}
+}
+
+@media (max-width: 540px) {
+.cards {
+  grid-template-columns: 1fr
+}
+}
+
+.full-container {
+  display: flex;
+  padding: 80px;
+}

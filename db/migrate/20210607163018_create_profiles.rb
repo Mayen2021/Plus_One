@@ -7,7 +7,6 @@ class CreateProfiles < ActiveRecord::Migration[6.0]
       t.string :gender
       t.string :job_title
       t.string :language
-
       t.timestamps
     end
   end
