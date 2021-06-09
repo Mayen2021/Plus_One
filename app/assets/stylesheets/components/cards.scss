@@ -1,0 +1,64 @@
+.card-category.col-4{
+  background-color: white;
+}
+
+.para {
+ color: #023047;
+}
+
+.body-card.d-flex {
+  background-color: #fff3ed;
+  width: 350px;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.activity-title {
+    margin-left: 107px;
+    margin-top: 61px;
+}
+
+
+.activity-title-map {
+   margin-left: 107px;
+    margin-top: 61px;
+    padding-bottom: 20px;
+
+}
+
+h5 {
+  color: #023047;
+   margin-left: 107px;
+}
+
+.card-category-theme {
+  background-size: cover;
+  background-position: center;
+  height: 130px;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0 20px 107px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+
+}
+
+
+.card-category-theme:hover{
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2));
+}
+
+.background-color {
+  height: 430px;
+  background-color: #fff8f4;
+}

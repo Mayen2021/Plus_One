@@ -4,10 +4,18 @@
   position: sticky;
   top:0;
   z-index: 1;
+  //flex-direction: row-reverse;
+  // background: white;
+  // border: 1px solid #fff8f4;
+}
+
+
+.flex-nav{
+  flex: none;
 }
 
 .navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+
 }
 
 .navbar-lewagon .navbar-brand img {
@@ -25,3 +33,7 @@
 }
 
 
+
+.nav-item {
+  text-align: center;
+}

@@ -1,0 +1,46 @@
+
+
+
+<h4 class="activity-title-map"> Get inspired</h4>
+
+
+<div class="background-color">
+      <div id="theme">
+        <div class="card-category-theme"  style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+        url(<%= asset_path('drinks.jpg') %>);">
+        DRINKS
+        </div>
+
+      <div class="card-category-theme" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+      url(<%= asset_path('sport.jpg') %>);">
+       SPORT
+      </div>
+      <div class="card-category-theme" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+      url(<%= asset_path('art.jpg') %>);">
+        ART
+      </div>
+      </div>
+</div>
+
+
+<h4 class="activity-title"> Activities near your </h4>
+<h5> Lisbon </h5>
+
+<div class="container">
+<div class="row">
+  <% @activities.each do |activity| %>
+  <div class="card-category col-4">
+    <div class="m-3">
+     <%= cl_image_tag(activity.photo.key,width: 350, height: 200, crop: :fill) %>
+      <div class="body-card d-flex">
+        <div>
+          <p class="title"> <%= activity.title %> </p>
+          <p class="para"> <%= activity.location %></p>
+       </div>
+       <p class="para"> Start in : <%=( activity.start_date - Date.today).to_i %> days </p>
+      </div>
+    </div>
+  </div>
+  <% end %>
+</div>
+</div>
