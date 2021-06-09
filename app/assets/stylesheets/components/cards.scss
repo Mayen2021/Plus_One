@@ -11,39 +11,41 @@
   width: 350px;
   justify-content: space-between;
   padding: 8px;
+  border-radius: 3px;
 }
 
-.title {
+.title-card {
   font-weight: bold;
+  color: #E67E22;
 }
 
 .activity-title {
-    margin-left: 107px;
+    margin-left: 187px;
     margin-top: 61px;
+    color:#E67E22;
 }
 
 
 .activity-title-map {
-   margin-left: 107px;
+   margin-left:  187px;
     margin-top: 61px;
     padding-bottom: 20px;
-
 }
 
 h5 {
   color: #023047;
-   margin-left: 107px;
+   margin-left: 187px;;
 }
 
 .card-category-theme {
   background-size: cover;
   background-position: center;
   height: 130px;
-  max-width: 500px;
+  width: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 15px 0 20px 107px;
+  margin: 15px 0 20px 187px;
   color: white;
   font-size: 24px;
   font-weight: bold;
@@ -58,7 +60,10 @@ h5 {
   background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2));
 }
 
-.background-color {
-  height: 430px;
+.map-card-layout {
+  display: flex;
+  justify-content: space-between;
   background-color: #fff8f4;
 }
+
+
