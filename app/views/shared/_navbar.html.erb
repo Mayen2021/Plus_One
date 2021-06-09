@@ -1,6 +1,6 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <%= link_to root_path, class: "navbar-brand" do %>
-    <%= image_tag "logo-3.jpg" %>
+    <%= image_tag "real_logo.png" %>
     <% end %>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,8 +21,8 @@
         <h1>Log out</h1>
         <% end %>
         <% else %>
-          <%= link_to "JOIN NOW", new_user_registration_path , class: "nav-link"%>
-          <%= link_to "LOG IN", new_user_session_path, class: "nav-link" %>
+          <%= link_to "JOIN NOW", new_user_registration_path , class: "nav-link btn btn-primary" %>
+          <%= link_to "LOG IN", new_user_session_path, class: "nav-link btn btn-ghost ml-3" %>
       <% end %>
     </ul>
   </div>

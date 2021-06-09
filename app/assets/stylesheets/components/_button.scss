@@ -14,3 +14,17 @@
  opacity: 0.5;
 }
 
+.btn-ghost {
+  color: white;
+  background-color: #e1e1e1;
+  border: 1px solid #4A4A4A;
+  padding: 8px 24px;
+  border-radius: 10px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  a {
+    color: white;
+  }
+}
+

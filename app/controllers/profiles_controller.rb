@@ -9,12 +9,24 @@ class ProfilesController < ApplicationController
 
 
   def create
-    #params
+
     #new
+    @profile = Profile.new(profile_params)
     #save
-    #profile.user = current_user
+    @profile.user = current_user
 
-    redirect_to activities_path
+    if @profile.saved
 
+      redirect_to activities_path, alert: "Profile created!"
+
+    else
+      render :new
+    end
+  end
+
+  private
+
+  def profiles_params
+   params.require(:profile).permit(:first_name, :last_name, :age, :gender, :job_title, :language)
   end
 end

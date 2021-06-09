@@ -1,6 +1,9 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: white;
+  background: #F0EFEB;
+  position: sticky;
+  top:0;
+  z-index: 1;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -8,5 +11,17 @@
 }
 
 .navbar-lewagon .navbar-brand img {
-  width: 40px;
+  width: 90px;
+  height: 25px;
+  border: none;
 }
+
+.collapse .navbar-collapse ul li{
+  display: inline;
+}
+
+
+.navbar .navbar-expand-sm {
+}
+
+
