@@ -1,0 +1,19 @@
+<div class="container">
+
+<h4 class="form-header">Create your activity</h4>
+        <%= simple_form_for [@activity] do |f| %>
+        <%= f.input :title, as: :string, required: false, wrapper_html: {class: "nice-class"} %>
+        <%= f.input :description, as: :string, required: false, wrapper_html: {class: "nice-class"} %>
+        <%= f.input :location, as: :string, required: false, wrapper_html: {class: "nice-class"} %>
+        <%= f.input :start_date, as: :date, required: false, wrapper_html: {class: "datepicker nice-class"} %>
+        <%= f.input :end_date, as: :date, required: false, wrapper_html: {class: "datepicker"} %>
+        <%= f.input :photo, required: true %>
+        <%= f.input :theme, collection: Theme.all %>
+
+        <div class="wrapper-button d-flex">
+          <%= f.submit class: 'btn btn-primary form-btn' %>
+        </div>
+        <% end %>
+    </div>
+ </div>
+
