@@ -1,5 +1,6 @@
 class Review < ApplicationRecord
-  belongs_to :activities
+  belongs_to :activity
+  belongs_to :user
 
   validates :comment, presence: true
   validates :comment, length: { minimum: 6 }
