@@ -9,20 +9,19 @@
       <% if user_signed_in? %>
         <% if current_user.profile.present? %>
           <%= link_to profile_path(current_user.profile) do %>
-
           <% end %>
         <% end %>
         <%= link_to destroy_user_session_path, class: "nav-link btn btn-ghost ml-3", method: :delete do %>
         <% end %>
         <% else %>
-          <%= link_to "JOIN NOW", new_user_registration_path , class: "nav-link btn btn-primary" %>
+          <%= link_to "JOIN NOW", new_user_registration_path, class: "nav-link btn btn-primary" %>
           <%= link_to "LOG IN", new_user_session_path, class: "nav-link btn btn-ghost ml-3" %>
       <% end %>
     </ul>
-
+    </div>
+     <%= link_to "LOG OUT", destroy_user_session_path, class: "nav-link btn btn-primary", method: :delete %>
   </div>
-  <%= link_to "LOG OUT", destroy_user_session_path, class: "nav-link btn btn-primary", method: :delete %>
-</div>
+
 
 
 
