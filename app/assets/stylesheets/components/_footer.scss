@@ -11,9 +11,13 @@ footer {
   color:#4b4c4d;
 }
 
+ .footer-text {
+
  .footer-header {
+
   margin-top:0;
-  margin-bottom:12px;
+  margin-top: 10px;
+  margin-bottom:10px;
   font-weight:bold;
   font-size:16px;
   color:  #FB8500;
@@ -71,6 +75,17 @@ footer ul a:hover {
   font-style: italic;
   opacity: 0.7;
   margin-top: 15px;
+
+}
+
+.footer-icons {
+  width: 100%;
+  background-color: #cfcfcf;
+  text-align: center;
+  font-size: 24px;
+  opacity: 0.7;
+  word-spacing: 20px;
+
 }
 
 .footer-icons {
@@ -81,4 +96,5 @@ footer ul a:hover {
   word-spacing: 30px;
   opacity: 0.7;
 }
+
 
