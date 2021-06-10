@@ -13,7 +13,6 @@
           <% end %>
         <% end %>
         <%= link_to destroy_user_session_path, class: "nav-link btn btn-ghost ml-3", method: :delete do %>
-        <p>Log out</p>
         <% end %>
         <% else %>
           <%= link_to "JOIN NOW", new_user_registration_path , class: "nav-link btn btn-primary" %>
