@@ -20,7 +20,9 @@
           <%= link_to "LOG IN", new_user_session_path, class: "nav-link btn btn-ghost ml-3" %>
       <% end %>
     </ul>
+
   </div>
+  <%= link_to "LOG OUT", destroy_user_session_path, class: "nav-link btn btn-primary", method: :delete %>
 </div>
 
 
