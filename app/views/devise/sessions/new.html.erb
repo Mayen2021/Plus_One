@@ -1,9 +1,7 @@
 
-
-<div class="container-fluid d-flex">
-  <div class="row">
-
-        <h3 class="text-white">We are Plus One</h3>
+<div class="big-container">
+  <div class="login-form">
+        <h3 class="login-title">We are Plus One</h3>
         <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
        <div class="form-inputs">
        <%= f.input :email,
@@ -16,19 +14,24 @@
         <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
         </div>
 
-        <div class="btn-block btn-color">
-        <%= f.button :submit, "Log in" %>
+        <div id="bu">
+        <%= f.button :submit, "Log in", class: 'log-in-btn' %>
         </div>
         <% end %>
-        <%= render "devise/shared/links" %>
-        </div>
-
-<div class="col-sm-6 px-0 d-none d-sm-block">
-  <%= image_tag "log.jpg" %>
+         <%= render "devise/shared/links" %>
+  </div>
+<div class="img-log" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),  url(<%= asset_path('log.jpg') %>);">
+  <h1 class="text-white"> Sharing moments with friends</h1>
+  </div>
 
 
 </div>
-</div>
+
+
+
+
+
+
 
 
 
