@@ -9,6 +9,7 @@ require "open-uri"
 
 Activity.destroy_all
 Theme.destroy_all
+Profile.destroy_all
 User.destroy_all
 
 puts "create user"
@@ -100,7 +101,7 @@ activity5 = Activity.create!(
  title: "Learn Japanese language",
  start_date: Date.today + 21,
  end_date: Date.today + 21,
- location: "R. Santos-O-Velho 2 e 4, 1200-109 Lisboa",
+ location: "Rua Santos-O-Velho 2 e 4, 1200-109 Lisboa",
  theme: language_exchange,
    user: admin
  )
@@ -115,7 +116,7 @@ activity6 = Activity.create!(
  title: "Tipsy Foodies in Lisbon",
  start_date: Date.today + 26,
  end_date: Date.today + 26,
- location: "R. Nova da Piedade 10, 1200-192 Lisboa",
+ location: "Rua Nova da Piedade 10, 1200-192 Lisboa",
  theme: food,
    user: admin
 )
@@ -126,10 +127,10 @@ activity6.save!
 # # 7 activity
 url7 = "https://res.cloudinary.com/dseegocw7/image/upload/v1623159541/mason-dahl--7AxXbZekDE-unsplash_gpyemx.jpg"
 activity7 = Activity.create!(
-title: "Friday Evening Late Picnic",
+title: "Friday Evening Picnic",
 start_date: Date.today + 2,
 end_date: Date.today + 2,
-location: "R. das Flores de Santa Cruz 2, 1100-129 Lisboa",
+location: "Rua das Flores de Santa Cruz 2, 1100-129 Lisboa",
 theme: outdoor,
    user: admin
 )
@@ -144,7 +145,7 @@ activity8 = Activity.create!(
 title: "Grass Volleyball",
 start_date: Date.today + 8,
 end_date: Date.today + 8,
-location: "R. de São Bento 239, 1250-026 Lisboa",
+location: "Rua de São Bento 239, 1250-026 Lisboa",
 theme: sport,
    user: admin
 )
@@ -171,7 +172,7 @@ activity9.save!
 # # 10 activity
 url10 = "https://res.cloudinary.com/dseegocw7/image/upload/v1623153972/surf_q0dip5.jpg"
 activity10 = Activity.create!(
-title: "Let´s go surfing on the weekend !",
+title: "Let´s go surfing!",
 start_date:  Date.today + 9,
 end_date:  Date.today + 9,
 location: "2825-412 Costa da Caparica",
@@ -190,7 +191,7 @@ activity11 = Activity.create!(
 title: "Movie night",
 start_date:  Date.today + 24,
 end_date:   Date.today + 24,
-location: "Santos, Lisbon",
+location: "Largo do Corpo Santo 25, Santos, Lisbon",
 theme: entertainment,
    user: admin
 )
@@ -202,10 +203,10 @@ activity11.save!
 # # 12 activity
 url12 = "https://res.cloudinary.com/dseegocw7/image/upload/v1623153972/concert_dnikxz.jpg"
 activity12 = Activity.create!(
-title: "Thursday Night Weekly Jam",
+title: "Thursday Weekly Jam",
 start_date:  Date.today + 27,
 end_date:  Date.today + 27,
-location: "Santos, Lisbon",
+location: "Rua de São Bernardo 33, Santos, Lisbon",
 theme: entertainment,
    user: admin
 )

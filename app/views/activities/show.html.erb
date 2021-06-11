@@ -1,0 +1,27 @@
+
+<%= link_to "<< Back to list of activities", activities_path, class: "revert-link" %>
+<h2 class="title-text"> <%=@activity.title%></h2>
+<div class="card-product">
+  <%= cl_image_tag @activity.photo.key %>
+  <div class="card-product-infos">
+    <div>
+      <p class="avatar-text">Hosted by:</p>
+    </div>
+    <%= image_tag "profile-me.png", class: "card-trip-user avatar" %>
+    <p class="paragraph-header">Description:</p>
+    <p class="paragraph-text"><%=@activity.description%></p>
+    <p class="paragraph-text"><strong>Location: </strong> <%=@activity.location%></p>
+    <p class="paragraph-text"><strong>Start date: </strong><%=@activity.start_date%></p>
+    <p class="paragraph-text"><strong>End date: </strong><%=@activity.end_date%></p>
+    <div>
+      <%= link_to "JOIN NOW", new_user_registration_path, class: "btn btn-primary show-link" %>
+      <%= link_to "CHAT NOW", new_user_session_path, class: "btn btn-ghost ml-3 show-link" %>
+    </div>
+  </div>
+</div>
+
+  <div id="map"
+    style="height: 400px;"
+    data-markers="<%= @markers.to_json %>"
+    data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+</div>
