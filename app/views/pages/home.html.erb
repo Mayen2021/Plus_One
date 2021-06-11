@@ -9,6 +9,7 @@
     <div class="container my-3">
 <div class="row">
   <% @activities.each do |activity| %>
+  <%= link_to activity_path(activity), class:'text-decoration-none' do %>
   <div class="card-category col-4">
     <div class="m-4">
      <%= cl_image_tag(activity.photo.key,width: 350, height: 200, crop: :fill) %>
@@ -20,6 +21,7 @@
        <p class="para"> Start in : <%=( activity.start_date - Date.today).to_i %> days </p>
       </div>
     </div>
+    <% end %>
   </div>
   <% end %>
 </div>
@@ -31,18 +33,21 @@
         <div class="card fas fa-edit icon">
           <h3 class="action-header">Create profile</h3>
       <p class="action-text">Set up your profile and connect with other users. It’s simple and easy!</p>
+      <%= link_to "Create Profile", new_user_registration_path, class: "btn btn-primary info-link" %>
     </div>
 
 
       <div class="card fas fa-scroll icon">
         <h3 class="action-header">Find your activity</h3>
       <p class="action-text">Browse list of activities to find a matching buddy or create your own activity.</p>
+      <%= link_to "Find activities", activities_path, class: "btn btn-primary info-link" %>
     </div>
 
 
       <div class="card fas fa-thumbs-up icon">
         <h3 class="action-header">Confirm your activity</h3>
       <p class="action-text">Confirm activity with your buddy. Use the chat feature to request more information.</p>
+       <%= link_to "Confirm activity", activities_path, class: "btn btn-primary info-link" %>
     </div>
   </div>
   </div>
