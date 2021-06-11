@@ -13,12 +13,13 @@
         <%= f.input :end_date, as: :date, required: false,  input_html: { class: "inline" } %>
         <%= f.input :photo, required: true,  input_html: { class: "inline" } %>
         <%= f.input :theme, collection: Theme.all, placeholder: "Select from list", input_html: { class: "inline" } %>
-      </div>
+
 
         <div class="wrapper-button d-flex">
-          <%= f.submit class: 'btn btn-primary form-btn' %>
+          <%= f.submit class: 'btn btn-primary' %>
         </div>
         <% end %>
+        </div>
     </div>
   </div>
 </div>
