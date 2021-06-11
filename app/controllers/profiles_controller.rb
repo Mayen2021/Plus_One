@@ -1,10 +1,6 @@
 class ProfilesController < ApplicationController
   def new
-    unless current_user.profile.present?
       @profile = Profile.new
-    else
-      redirect_to root_path
-    end
   end
 
 
@@ -32,6 +28,6 @@ end
   private
 
   def profiles_params
-   params.require(:profile).permit(:first_name, :last_name, :age, :gender, :job_title, :language)
+   params.require(:profile).permit(:first_name, :last_name, :age, :gender, :job_title, :language, :photo)
   end
 end

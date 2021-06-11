@@ -10,21 +10,30 @@
         <% if current_user.profile.present? %>
           <%= link_to profile_path(current_user.profile) do %>
           <% end %>
+        <%= link_to "My profile", profile_path(current_user.profile) %>
+        <% else %>
+        <%= link_to "My profile", new_profile_path %>
         <% end %>
         <%= link_to destroy_user_session_path, class: "nav-link btn btn-ghost ml-3", method: :delete do %>
         <% end %>
+
+      <% else %>
+          <%= link_to "Join Now", new_user_registration_path, class: "nav-link btn btn-primary" %>
+          <%= link_to "Log In", new_user_session_path, class: "nav-link btn btn-ghost ml-3" %>
+
         <% else %>
           <%= link_to "Activities", activities_path, class: "navigation-links" %>
           <%= link_to "Contact", activities_path, class: "navigation-links" %>
           <%= link_to "Features", activities_path, class: "navigation-links" %>
           <%= link_to "JOIN NOW", new_user_registration_path, class: "nav-link btn btn-primary" %>
           <%= link_to "LOG IN", new_user_session_path, class: "nav-link btn btn-ghost ml-3" %>
+
       <% end %>
     </ul>
     </div>
-     <%= link_to "LOG OUT", destroy_user_session_path, class: "nav-link btn btn-primary", method: :delete %>
+     <%= link_to 'Sign out', destroy_user_session_path, :method => :delete
+ %>
   </div>
-
 
 
 
