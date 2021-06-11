@@ -1,19 +1,27 @@
 <div class="container">
+  <div class=" justify-content-center">
 
-<h4 class="form-header">Create your activity</h4>
+      <div class="form-create">
+      <h3 class="form-header">Create your activity</h3>
+
         <%= simple_form_for [@activity] do |f| %>
-        <%= f.input :title, as: :string, required: false, wrapper_html: {class: "nice-class"} %>
-        <%= f.input :description, as: :string, required: false, wrapper_html: {class: "nice-class"} %>
-        <%= f.input :location, as: :string, required: false, wrapper_html: {class: "nice-class"} %>
-        <%= f.input :start_date, as: :date, required: false, wrapper_html: {class: "datepicker nice-class"} %>
-        <%= f.input :end_date, as: :date, required: false, wrapper_html: {class: "datepicker"} %>
-        <%= f.input :photo, required: true %>
-        <%= f.input :theme, collection: Theme.all %>
+        <div class="input-fields">
+        <%= f.input :title, as: :string, required: false, placeholder: "Hiking at Sintra",input_html: { class: "inline" } %>
+        <%= f.input :description, as: :string, required: false, placeholder: "A full day hike around Sintra's major attractions", input_html: { class: "inline" } %>
+        <%= f.input :location, as: :string, required: false, placeholder: "Sintra",  input_html: { class: "inline" } %>
+        <%= f.input :start_date, as: :date, required: false,  input_html: { class: "inline" } %>
+        <%= f.input :end_date, as: :date, required: false,  input_html: { class: "inline" } %>
+        <%= f.input :photo, required: true,  input_html: { class: "inline" } %>
+        <%= f.input :theme, collection: Theme.all, placeholder: "Select from list", input_html: { class: "inline" } %>
+      </div>
 
         <div class="wrapper-button d-flex">
           <%= f.submit class: 'btn btn-primary form-btn' %>
         </div>
         <% end %>
     </div>
+  </div>
+</div>
  </div>
+
 
