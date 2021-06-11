@@ -1,4 +1,9 @@
-<h4 class="activity-title-map"> Get inspired</h4>
+
+
+<div class="search-form-control">
+ <%= form_tag activities_path, method: :get do %><%= text_field_tag :query, params[:query], class: "form-control", placeholder: "Find an activity"%><%= submit_tag "Search", class: "btn-search btn-primary" %><% end %>
+</div>
+
 <%= link_to "Create your activity", new_activity_path, class: "btn btn-primary text-right create-btn" %>
 
 <div class="map-card-layout">
@@ -34,6 +39,7 @@
 <div class="row">
   <% @activities.each do |activity| %>
   <div class="card-category col-4">
+    <%= link_to activity_path(activity), class:'text-decoration-none' do %>
     <div class="m-3">
      <%= cl_image_tag(activity.photo.key,width: 350, height: 200, crop: :fill) %>
       <div class="body-card d-flex">
@@ -44,6 +50,7 @@
        <p class="para"> Start in : <%=( activity.start_date - Date.today).to_i %> days </p>
       </div>
     </div>
+     <% end %>
   </div>
   <% end %>
 </div>
