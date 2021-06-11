@@ -18,6 +18,9 @@
           <%= link_to profile_path(current_user.profile) do %>
             <p>Profile</p>
           <% end %>
+        <%= link_to "My profile", profile_path(current_user.profile) %>
+        <% else %>
+        <%= link_to "My profile", new_profile_path %>
         <% end %>
         <%= link_to "LOG OUT",destroy_user_session_path, class: "nav-link btn btn-primary ml-3", method: :delete %>
         <% else %>
@@ -27,7 +30,7 @@
     </ul>
     </div>
   </div>
-
+ </div>
 
 
 

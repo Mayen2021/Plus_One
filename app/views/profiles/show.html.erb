@@ -1,3 +1,20 @@
 
-<h1><%= @profile.first_name %></h1>
-<h5><%= @profile.email%></h5>
+
+
+<div class="container-my-profile d-flex">
+
+<div class="background-my-profile">
+    <h1>  <%= @profile.first_name %>   </h1>
+    <h2>  <%= @profile.last_name %>   </h2>
+    <p>  <%= @profile.job_title %>   <p>
+    <p> <%= @profile.age %>   <p>
+   <p> <%= @profile.language %>   <p>
+
+</div>
+<div class="my-history">
+<h3 class="my-title-history">My history</h3>
+<%= link_to "Create your activity", new_activity_path, class: "btn btn-primary create-btn" %>
+
+</div>
+
+</div>
