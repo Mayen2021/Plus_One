@@ -126,7 +126,7 @@ activity6.save!
 # # 7 activity
 url7 = "https://res.cloudinary.com/dseegocw7/image/upload/v1623159541/mason-dahl--7AxXbZekDE-unsplash_gpyemx.jpg"
 activity7 = Activity.create!(
-title: "Friday Evening Late Picnic",
+title: "Friday Evening Picnic",
 start_date: Date.today + 2,
 end_date: Date.today + 2,
 location: "R. das Flores de Santa Cruz 2, 1100-129 Lisboa",
@@ -171,7 +171,7 @@ activity9.save!
 # # 10 activity
 url10 = "https://res.cloudinary.com/dseegocw7/image/upload/v1623153972/surf_q0dip5.jpg"
 activity10 = Activity.create!(
-title: "Let´s go surfing on the weekend !",
+title: "Let´s go surfing!",
 start_date:  Date.today + 9,
 end_date:  Date.today + 9,
 location: "2825-412 Costa da Caparica",
@@ -202,7 +202,7 @@ activity11.save!
 # # 12 activity
 url12 = "https://res.cloudinary.com/dseegocw7/image/upload/v1623153972/concert_dnikxz.jpg"
 activity12 = Activity.create!(
-title: "Thursday Night Weekly Jam",
+title: "Thursday Weekly Jam",
 start_date:  Date.today + 27,
 end_date:  Date.today + 27,
 location: "Santos, Lisbon",
