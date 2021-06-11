@@ -41,20 +41,19 @@ ActiveRecord::Schema.define(version: 2021_06_09_122307) do
     t.date "start_date"
     t.date "end_date"
     t.string "location"
+    t.string "description"
     t.bigint "theme_id", null: false
+    t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.float "latitude"
     t.float "longitude"
     t.index ["theme_id"], name: "index_activities_on_theme_id"
+    t.index ["user_id"], name: "index_activities_on_user_id"
   end
 
   create_table "bookings", force: :cascade do |t|
-    t.string "title"
-    t.string "description"
-    t.date "start_date"
-    t.date "end_date"
-    t.string "location"
+    t.boolean "status"
     t.bigint "activity_id"
     t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
@@ -88,6 +87,7 @@ ActiveRecord::Schema.define(version: 2021_06_09_122307) do
   end
 
   create_table "selected_themes", force: :cascade do |t|
+    t.string "name"
     t.bigint "profile_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -114,6 +114,7 @@ ActiveRecord::Schema.define(version: 2021_06_09_122307) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "activities", "themes"
+  add_foreign_key "activities", "users"
   add_foreign_key "bookings", "activities"
   add_foreign_key "bookings", "users"
   add_foreign_key "profiles", "users"

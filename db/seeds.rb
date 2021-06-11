@@ -9,6 +9,7 @@ require "open-uri"
 
 Activity.destroy_all
 Theme.destroy_all
+Profile.destroy_all
 User.destroy_all
 
 puts "create user"
