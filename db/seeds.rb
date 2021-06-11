@@ -9,6 +9,7 @@ require "open-uri"
 
 Activity.destroy_all
 Theme.destroy_all
+Profile.destroy_all
 User.destroy_all
 
 puts "create user"
@@ -38,7 +39,7 @@ activity1 = Activity.create(
    title: "A Unique Hike",
    start_date: Date.today + 23,
    end_date: Date.today + 24,
-   location: "Rua das Flores 41 43, 1200-193 Lisboa",
+   location: "Rua das Flores, Lisboa",
    theme: sport,
    user: admin
   )
@@ -54,7 +55,7 @@ activity2 = Activity.create!(
    title: "Friday Drinks",
    start_date: Date.today + 9,
    end_date:  Date.today + 9,
-   location: "Rua de S. Paulo 136, 1200-429 Lisboa",
+   location: "Rua de S. Paulo, Lisboa",
    theme: drinks,
    user: admin
   )
@@ -100,7 +101,7 @@ activity5 = Activity.create!(
  title: "Learn Japanese language",
  start_date: Date.today + 21,
  end_date: Date.today + 21,
- location: "Rua Santos-O-Velho 2 e 4, 1200-109 Lisboa",
+ location: "Rua Santos-O-Velho, Lisboa",
  theme: language_exchange,
    user: admin
  )
@@ -115,7 +116,7 @@ activity6 = Activity.create!(
  title: "Tipsy Foodies in Lisbon",
  start_date: Date.today + 26,
  end_date: Date.today + 26,
- location: "Rua Nova da Piedade 10, 1200-192 Lisboa",
+ location: "Rua Nova da Piedade,Lisboa",
  theme: food,
    user: admin
 )
@@ -129,7 +130,7 @@ activity7 = Activity.create!(
 title: "Friday Evening Picnic",
 start_date: Date.today + 2,
 end_date: Date.today + 2,
-location: "Rua das Flores de Santa Cruz 2, 1100-129 Lisboa",
+location: "Rua das Flores de Santa Cruz, Lisboa",
 theme: outdoor,
    user: admin
 )
@@ -144,7 +145,7 @@ activity8 = Activity.create!(
 title: "Grass Volleyball",
 start_date: Date.today + 8,
 end_date: Date.today + 8,
-location: "Rua de São Bento 239, 1250-026 Lisboa",
+location: "Rua de São Bento, Lisboa",
 theme: sport,
    user: admin
 )
@@ -190,7 +191,7 @@ activity11 = Activity.create!(
 title: "Movie night",
 start_date:  Date.today + 24,
 end_date:   Date.today + 24,
-location: "Largo do Corpo Santo 25, Santos, Lisbon",
+location: "Largo do Corpo Santo , Lisbon",
 theme: entertainment,
    user: admin
 )
