@@ -31,6 +31,7 @@ class ActivitiesController < ApplicationController
       lng: @activity.longitude }]
   end
 
+
   def results
     if params[:query].present?
       @activities = Activity.search_by_title_and_location(params[:query])
@@ -41,6 +42,7 @@ class ActivitiesController < ApplicationController
       @activities = Activity.all
     end
   end
+
 
   private
 

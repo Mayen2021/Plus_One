@@ -3,18 +3,61 @@
 
 <div class="container-my-profile d-flex">
 
+
+
 <div class="background-my-profile">
-    <h1>  <%= @profile.first_name %>   </h1>
-    <h2>  <%= @profile.last_name %>   </h2>
-    <p>  <%= @profile.job_title %>   <p>
-    <p> <%= @profile.age %>   <p>
-   <p> <%= @profile.language %>   <p>
+
+<div class="container-avatar mx-6">
+<% if @profile.photo.present? %>
+<%= cl_image_tag @profile.photo.key, height: 300, width: 400, crop: :fill, class: 'avatar-profile' %>
+<% else %>
+  <%= cl_image_tag('avatar.jpg') %>
+<% end %>
+</div>
+
+    <h1>  <%= @profile.first_name %> </h1>
+    <h2>  <%= @profile.last_name %> </h2>
+    <p>  <%= @profile.job_title %> <p>
+    <p> <%= @profile.age %> <p>
+   <p> <%= @profile.language %> <p>
+
+
 
 </div>
+
 <div class="my-history">
 <h3 class="my-title-history">My history</h3>
-<%= link_to "Create your activity", new_activity_path, class: "btn btn-primary create-btn" %>
 
+
+<%= link_to " Create your activity", new_activity_path, class: " btn btn-primary profile-btn fas fa-plus" %>
+<%= link_to " Edit your profile", edit_profile_path, class: " btn btn-primary profile-btn fas fa-plus" %>
+
+<div class="container-activity-user" style="text-decoration: none">
+<ul class="list">
+<li>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-inbox"
+            viewBox="0 0 24 24">
+            <path d="M22 12h-6l-2 3h-4l-2-3H2" />
+
+
+<%=  if (@activity.end_date > Date.today) %>
+
+<% @profile.user.activities.each do |activity| %>
+<i class="fas fa-chevron-circle-down">
+ <%= activity.title %>
+ </i>
+
+</li>
+<li>
+  <i class="fas fa-map-marker">
+  <%= activity.location %>
+  </i>
+ <% end %>
+ </li>
+ </ul>
+ </div>
+<ul>
 </div>
 
-</div>
