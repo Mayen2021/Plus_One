@@ -1,0 +1,6 @@
+<div class="search-form-control">
+ <%= form_tag results_activities_path, method: :get do %>
+  <%= text_field_tag :query, params[:query], class: "form-control", placeholder: "Find an activity"%>
+  <%= submit_tag "Search", class: "btn-search btn-primary", name: nil %>
+ <% end %>
+</div>

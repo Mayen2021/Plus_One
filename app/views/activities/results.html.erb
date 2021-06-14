@@ -1,0 +1,30 @@
+<%= render "search_form" %>
+<%if params[:query].present?  %>
+  <h4 class="activity-title"> List of activities for <em>"<%= params[:query] %>"<em> </h4>
+    <% else %>
+   <h4 class="activity-title"> List of activities </h4>
+  <% end %>
+
+<div class="container">
+<div class="row">
+  <% if @activities.empty? %>
+    <h3>Results not found</h3>
+  <% end %>
+  <% @activities.each do |activity| %>
+  <div class="card-category col-4">
+    <%= link_to activity_path(activity), class:'text-decoration-none' do %>
+    <div class="m-3">
+     <%= cl_image_tag(activity.photo.key,width: 350, height: 200, crop: :fill) %>
+      <div class="body-card d-flex">
+        <div>
+          <p class="title-card"> <%= activity.title %> </p>
+          <p class="para"> <%= activity.location %></p>
+       </div>
+       <p class="para"> Start in : <%=( activity.start_date - Date.today).to_i %> days </p>
+      </div>
+    </div>
+     <% end %>
+  </div>
+  <% end %>
+</div>
+</div>
