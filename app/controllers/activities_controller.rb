@@ -32,6 +32,18 @@ class ActivitiesController < ApplicationController
   end
 
 
+  def results
+    if params[:query].present?
+      @activities = Activity.search_by_title_and_location(params[:query])
+    elsif params[:theme].present?
+      @activities = Activity.includes(:theme).where(themes: { name: params[:theme] })
+
+    else
+      @activities = Activity.all
+    end
+  end
+
+
   private
 
   def activities_params

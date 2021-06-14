@@ -1,28 +1,24 @@
-<h4 class="activity-title-map"> Get inspired</h4>
+<%= render "search_form" %>
 
-<%= link_to "Create your activity", new_activity_path, class: "btn btn-primary text-right create-btn" %>
+<%= link_to "Create your activity", new_activity_path, class: "btn btn-primary justify-content-end create-btn" %>
 
 <div class="map-card-layout">
-      <div id="theme">
+  <div id="theme">
+    <% Theme.all.sample(3).each do |theme| %>
+      <%= link_to results_activities_path(theme: theme.name) do %>
         <div class="card-category-theme"  style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
-        url(<%= asset_path('drinks.jpg') %>);">
-        DRINKS
+          url(<%= asset_path("#{theme.name}.jpg") %>);">
+          <%= theme.name.upcase %>
         </div>
+      <% end %>
+    <% end %>
+  </div>
 
-      <div class="card-category-theme" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
-      url(<%= asset_path('sport.jpg') %>);">
-       SPORT
-      </div>
-      <div class="card-category-theme" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
-      url(<%= asset_path('art.jpg') %>);">
-        ART
-      </div>
-      </div>
-       <div id="map" class="map-index"
-           style="height: 400px; width: 700px"
-           data-markers="<%= @markers.to_json %>"
-           data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
-      </div>
+  <div id="map" class="map-index"
+       style="height: 400px; width: 700px"
+       data-markers="<%= @markers.to_json %>"
+       data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+  </div>
 </div>
 
 
