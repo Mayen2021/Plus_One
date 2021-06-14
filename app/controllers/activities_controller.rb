@@ -31,6 +31,7 @@ class ActivitiesController < ApplicationController
       lng: @activity.longitude }]
   end
 
+
   private
 
   def activities_params

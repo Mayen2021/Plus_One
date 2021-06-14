@@ -1,9 +1,5 @@
-
-
-
-<div class="container-profile">
-    <%= simple_form_for(@profile) do |f| %>
-    <div class="avatar-wrapper" >
+<%= form_for @profile, url {action: "update"} do |f| %>
+<div class="avatar-wrapper" >
       <%= f.input :photo, as: :file , label: "uploaded " %>
     </div>
     <%= f.input :first_name %>
@@ -12,7 +8,7 @@
     <%= f.input :gender, as: :radio_buttons, collection: [['0', 'female'], ['1', 'male']], label_method: :second, value_method: :first %>
     <%= f.input :job_title %>
     <%= f.input :language%>
-    <%= f.button :submit %>
+    <%= f.submit "Update profile" %>
     <% end %>
 </div>
-
+<%= end %>
