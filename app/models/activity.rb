@@ -8,4 +8,10 @@ class Activity < ApplicationRecord
   validates :title, presence: true
   after_validation :geocode, if: :will_save_change_to_location?
 
+  include PgSearch::Model
+  pg_search_scope :search_by_title_and_location,
+    against: [:title, :location],
+    using: {
+      tsearch: { prefix: true } # <-- now `superman batm` will return something!
+    }
 end
