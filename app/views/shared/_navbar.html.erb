@@ -10,16 +10,16 @@
       <% if user_signed_in? %>
         <% if current_user.profile.present? %>
 
-        <%= link_to "My profile", profile_path(current_user.profile) %>
-        <%= link_to "My bookings", bookings_path %>
+        <%= link_to "MY PROFILE", profile_path(current_user.profile), class: "navg-link" %>
+        <%= link_to "MY BOOKINGS", bookings_path, class: "navg-link" %>
         <% else %>
         <%= link_to "My profile", new_profile_path %>
         <% end %>
 
-        <%= link_to "LOG OUT",destroy_user_session_path, class: "nav-link btn btn-primary ml-3", method: :delete %>
+        <%= link_to "LOG OUT",destroy_user_session_path, class: "nav-link2", method: :delete %>
         <% else %>
-          <%= link_to "JOIN NOW", new_user_registration_path, class: "nav-link btn btn-primary" %>
-          <%= link_to "LOG IN", new_user_session_path, class: "nav-link btn btn-ghost ml-3" %>
+          <%= link_to "JOIN NOW", new_user_registration_path, class: "nav-link2" %>
+          <%= link_to "LOG IN", new_user_session_path, class: "nav-link2" %>
       <% end %>
     </ul>
   </div>
