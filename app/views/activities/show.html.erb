@@ -15,7 +15,7 @@
     <p class="paragraph-text"><strong>End date: </strong><%=@activity.end_date%></p>
     <div>
       <%= link_to "JOIN NOW", new_user_registration_path, class: "btn btn-primary show-link" %>
-      <%= link_to "CHAT NOW", new_user_session_path, class: "btn btn-ghost ml-3 show-link" %>
+<%= link_to "CHAT NOW",  chatroom_path(@chatroom.id), class: "btn btn-ghost ml-3 show-link" %>
     </div>
   </div>
 </div>

@@ -26,6 +26,7 @@ class ActivitiesController < ApplicationController
   end
 
   def show
+    @chatroom = Chatroom.first
     @activity = Activity.find(params[:id])
     @markers =  [{ lat: @activity.latitude,
       lng: @activity.longitude }]

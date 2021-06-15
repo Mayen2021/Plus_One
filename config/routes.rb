@@ -8,8 +8,14 @@ Rails.application.routes.draw do
       get :results
     end
     resources :bookings, only: %i[create]
+
+  end
+
+  resources :chatrooms, only: %i[show] do
+    resources :messages, only: %i[create]
   end
 
   resources :bookings, only: :destroy
   resources :profiles, only: %i[new create show edit update]
+
 end
