@@ -13,16 +13,12 @@
     <p class="paragraph-text"><strong>End date: </strong><%=@activity.end_date%></p>
     <div>
 
-      <%= link_to "JOIN NOW", new_user_registration_path, class: "btn btn-primary show-link" %>
-<%= link_to "CHAT NOW",  chatroom_path(@chatroom.id), class: "btn btn-ghost ml-3 show-link" %>
+ <%= link_to "JOIN NOW", new_user_registration_path, class: "btn btn-primary show-link" %>
+ <%= link_to "CHAT NOW",  chatroom_path(@chatroom.id), class: "btn btn-ghost ml-3 show-link" %>
+ <%= simple_form_for @booking, url: activity_bookings_path(@activity), method: :post do |f| %>
 
-      <%= simple_form_for @booking, url: activity_bookings_path(@activity), method: :post do |f| %>
+      <% end %>
 
-      <div class id="join-bu">
-        <%= f.button :submit, "Join now", class: 'sign-up-btn' %>
-      <%= link_to "CHAT NOW", new_user_session_path, class: "btn btn-ghost ml-3 show-link" %>
-       <% end %>
-         </div>
     </div>
   </div>
 </div>
