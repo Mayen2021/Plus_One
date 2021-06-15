@@ -4,31 +4,25 @@
     <%= image_tag "logo.png" %>
     <% end %>
   </div>
-  <% if user_signed_in? %>
-   <div class="links">
-      <%= link_to "Activities", activities_path, class: "navigation-links" %>
-      <%= link_to "Contact", activities_path, class: "navigation-links" %>
-      <%= link_to "Features", activities_path, class: "navigation-links" %>
-    </div>
-  <% end %>
+
   <div class="collapse navbar-collapse flex-nav" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <% if user_signed_in? %>
         <% if current_user.profile.present? %>
         <%= link_to "My profile", profile_path(current_user.profile) %>
+        <%= link_to "My bookings", bookings_path %>
         <% else %>
         <%= link_to "My profile", new_profile_path %>
         <% end %>
+
         <%= link_to "LOG OUT",destroy_user_session_path, class: "nav-link btn btn-primary ml-3", method: :delete %>
         <% else %>
           <%= link_to "JOIN NOW", new_user_registration_path, class: "nav-link btn btn-primary" %>
           <%= link_to "LOG IN", new_user_session_path, class: "nav-link btn btn-ghost ml-3" %>
       <% end %>
     </ul>
-    </div>
   </div>
- </div>
-
+</div>
 
 
 
