@@ -20,16 +20,24 @@
 
 .collapse .navbar-collapse ul li{
   display: inline;
+  padding-bottom: 20px;
 }
 
 .navbar-nav {
-  word-spacing: 5px;
+  word-spacing: 0.2px;
 }
 
 .nav-item {
   text-align: center;
 }
 
-.nav-link {
-  color: white;
+.nav-link2 {
+  color: #FB8500;
+  padding: 8px;
+  padding-top: 10px;
+}
+
+.navg-link {
+  padding: 8px;
+  padding-top: 10px;
 }
