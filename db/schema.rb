@@ -12,6 +12,8 @@
 
 ActiveRecord::Schema.define(version: 2021_06_15_090532) do
 
+ActiveRecord::Schema.define(version: 2021_06_14_164650) do
+
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -53,11 +55,11 @@ ActiveRecord::Schema.define(version: 2021_06_15_090532) do
   end
 
   create_table "bookings", force: :cascade do |t|
-    t.boolean "status"
     t.bigint "activity_id"
     t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "status", default: 0
     t.index ["activity_id"], name: "index_bookings_on_activity_id"
     t.index ["user_id"], name: "index_bookings_on_user_id"
   end

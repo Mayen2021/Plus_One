@@ -12,14 +12,7 @@
 }
 
 .label-field {
-  color: lighter;
-  background-color: #f2f2f2;
-  opacity: 0.9;
-  font-size: 15px;
-  font-family: 'Open Sans', sans-serif;
-  margin-bottom: 10px;
-  padding: 10px;
-  border-radius: 10px;
+
 }
 
 .login-title {
@@ -30,7 +23,7 @@
     margin-bottom: 25px;
 }
 
-#bu {
+#reg-bu {
     padding: 13px 30px;
     background-color: #fdbb28;
     border-radius: 0;
@@ -47,11 +40,17 @@
     }
 }
 
-.log-in-btn {
+.sign-up-btn {
   font-size: 20px;
   text-align: center;
+  background-color: #fdbb28;
 }
 
 
+.text-white {
+    color: #fff !important;
+    position: absolute;
+    bottom: 173px;
+    right: 167px;
 
-
+}

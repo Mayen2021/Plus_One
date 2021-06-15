@@ -14,4 +14,8 @@ class Activity < ApplicationRecord
     using: {
       tsearch: { prefix: true } # <-- now `superman batm` will return something!
     }
+
+  def days_to_start
+    (start_date - Date.today).to_i
+  end
 end
