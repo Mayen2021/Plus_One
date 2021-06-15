@@ -20,12 +20,8 @@
 
       <%= simple_form_for @booking, url: activity_bookings_path(@activity), method: :post do |f| %>
 
-      <div class id="join-bu">
-        <%= f.button :submit, "Join now", class: 'sign-up-btn' %>
-      </div>
       <% end %>
 
-      <%= link_to "CHAT NOW", new_user_session_path, class: "btn btn-ghost ml-3 show-link" %>
 
     </div>
   </div>
