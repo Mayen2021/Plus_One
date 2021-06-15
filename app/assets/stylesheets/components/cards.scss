@@ -6,12 +6,20 @@
  color: #023047;
 }
 
+.start-in {
+  flex-grow: 0;
+  flex-shrink: 1;
+  font-size: 0.75em;
+  width: 55px;
+}
+
 .body-card.d-flex {
+  flex-direction: column;
   background-color: #fff3ed;
-  width: 350px;
   justify-content: space-between;
   padding: 8px;
   border-radius: 3px;
+  min-height: 137px;
 }
 
 .title-card {
@@ -59,12 +67,21 @@ h5 {
   display: flex;
   justify-content: space-between;
   background-color: #fff8f4;
+  margin-top: 80px;
 }
 
 .create-btn {
- text-align: right;
-  margin-bottom: 30px;
+    text-decoration: none;
+  background-color: #FCA94C;
+  border-radius: 10px;
+  border:none;
+  padding: 10px 15px;
   color: white;
+  text-align: right;
+  margin-top: 20px;
+  position: absolute;
+  right: 115px;
+  top: 25%;
 }
 
 

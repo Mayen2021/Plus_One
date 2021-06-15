@@ -1,8 +1,9 @@
 <div class="container">
-  <div class=" justify-content-center">
+  <div class="row justify-content-center">
+    <div class="col-12 col-sm-4">
+      <h3 class="create-title">We are PlusOne</h3>
 
       <div class="form-create">
-      <h3 class="form-header">Create your activity</h3>
 
         <%= simple_form_for [@activity] do |f| %>
         <div class="input-fields">
@@ -13,10 +14,8 @@
         <%= f.input :end_date, as: :date, required: false,  input_html: { class: "inline" } %>
         <%= f.input :photo, required: true,  input_html: { class: "inline" } %>
         <%= f.input :theme, collection: Theme.all, placeholder: "Select from list", input_html: { class: "inline" } %>
-
-
-        <div class="wrapper-button d-flex">
-          <%= f.submit class: 'btn btn-primary' %>
+        <div >
+          <%= f.submit class: "form-btn" %>
         </div>
         <% end %>
         </div>
