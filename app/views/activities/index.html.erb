@@ -27,19 +27,19 @@
 
 <h5> Lisbon </h5>
 
-<div class="container">
+<div class="container my-3">
 <div class="row">
   <% @activities.each do |activity| %>
   <div class="card-category col-4">
     <%= link_to activity_path(activity), class:'text-decoration-none' do %>
-    <div class="m-3">
+    <div class="m-4">
      <%= cl_image_tag(activity.photo.key,width: 350, height: 200, crop: :fill) %>
       <div class="body-card d-flex">
-        <div>
-          <p class="title-card"> <%= activity.title %> </p>
+        <div class="d-flex">
+          <p class="title-card flex-grow-1"> <%= activity.title %> </p>
+          <p class="para start-in"> Start in : <%=( activity.start_date - Date.today).to_i %> days </p>
+           </div>
           <p class="para"> <%= activity.location %></p>
-       </div>
-       <p class="para"> Start in : <%=( activity.start_date - Date.today).to_i %> days </p>
       </div>
     </div>
      <% end %>
