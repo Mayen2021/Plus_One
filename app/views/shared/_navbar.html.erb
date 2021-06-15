@@ -9,6 +9,7 @@
     <ul class="navbar-nav mr-auto">
       <% if user_signed_in? %>
         <% if current_user.profile.present? %>
+
         <%= link_to "My profile", profile_path(current_user.profile) %>
         <%= link_to "My bookings", bookings_path %>
         <% else %>

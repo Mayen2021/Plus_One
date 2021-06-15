@@ -1,0 +1,22 @@
+
+<div class="container-edit-profile ">
+<div class="form-group mx-3 mb-2 ">
+
+<%= simple_form_for @profile, url: profile_path, method: :path do |f| %>
+<div class="d-flex justify-content-between">.
+    <%= f.input :first_name %>
+   <%= f.input :last_name%>
+</div>
+
+    <%= f.input :age, collection: 18..60, prompt: "Select your age", selected: 21 %>
+
+    <div class="form-check">
+    <%= f.input :gender, as: :radio_buttons, collection: [['0', 'female'], ['1', 'male']], label_method: :second, value_method: :first, class: 'form-check-input' %>
+    </div>
+    <%= f.input :job_title %>
+    <%= f.input :language%>
+    <%= f.button :submit, "Update profile", class: 'btn btn-primary mb-2' %>
+    <% end %>
+
+</div>
+</div>
