@@ -1,7 +1,7 @@
 
 
 
-<div class="container-profile">
+<div class="container-profile form-group">
     <%= simple_form_for(@profile) do |f| %>
     <div class="avatar-wrapper" >
       <%= f.input :photo, as: :file , label: "uploaded " %>
@@ -15,4 +15,6 @@
     <%= f.button :submit %>
     <% end %>
 </div>
+
+
 

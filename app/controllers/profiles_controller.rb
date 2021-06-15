@@ -20,6 +20,11 @@ class ProfilesController < ApplicationController
     end
   end
 
+def edit
+  @profile = Profile.find_by_id(params[:id])
+end
+
+
 def show
   @profile = Profile.find_by_id(params[:id])
 end
@@ -28,8 +33,8 @@ def update
     @profile = current_user.profile
 repond_to do |format|
   if @profile.update profiles_params
-    format.html { redirect_to edit_profile_path} notice: "Profile updated!" }
-    format.json {render :edit, status: :ok, location: @profile }
+    format.html { redirect_to edit_profile_path, notice: "Profile updated!" }
+    format.json { render :edit, status: :ok, location: @profile }
   else format.html {redirect_to edit_profile_path, flash: { error: "Profile could not be updated!"}}
     format.json {render json: @profile.errors.messages, status: :unprocessable_entity}
    end

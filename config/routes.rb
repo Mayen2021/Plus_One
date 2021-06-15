@@ -11,5 +11,5 @@ Rails.application.routes.draw do
   end
 
   resources :bookings, only: :destroy
-  resources :profiles, only: %i[new create show edit]
+  resources :profiles, only: %i[new create show edit update]
 end
