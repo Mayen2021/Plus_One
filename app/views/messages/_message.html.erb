@@ -1,4 +1,10 @@
-<div class="message <%= "right" if user_is_messages_author %>">
-  <%= image_tag message.user.profile.photo, class: "avatar-profile-message" %>
-  <div class="message-content"><%= message.content %></div>
+<div class="message <%= user_is_messages_author ? 'right' : 'left' %>">
+  <% if message.user.profile.photo.attached? %>
+    <%= image_tag message.user.profile.photo, class: "avatar-profile-message" %>
+  <% else %>
+    <%= image_tag 'avatar.jpg', class: 'avatar-profile-message' %>
+  <% end %>
+  <div class="message-content">
+    <%= message.content %>
+  </div>
 </div>
