@@ -36,7 +36,7 @@
     <%= link_to activity_path(activity), class:'text-decoration-none' do %>
     <div class="card-category">
     <div class="m-4">
-      <%= cl_image_tag(activity.photo.key, width: 4000, height: 200, crop: :fill, class: 'img-fluid') %>
+      <%= cl_image_tag(activity.photo.key, width: 350, height: 200, crop: :fill, class: 'img-fluid') %>
       <div class="body-card d-flex">
         <div class="d-flex">
           <p class="title flex-grow-1">
@@ -55,4 +55,6 @@
   <% end %>
 </div>
 </div>
+
+
 
