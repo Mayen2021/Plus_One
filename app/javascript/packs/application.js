@@ -26,6 +26,7 @@ require("channels")
 import "bootstrap";
 import { initMapbox } from '../plugins/init_mapbox';
 import { scrollLastMessageIntoView } from '../plugins/scroll';
+import { initChatRoom } from '../plugins/chatroom';
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
@@ -34,5 +35,6 @@ import { scrollLastMessageIntoView } from '../plugins/scroll';
 document.addEventListener('turbolinks:load', () => {
   initMapbox();
   scrollLastMessageIntoView();
+  initChatRoom();
 })
 

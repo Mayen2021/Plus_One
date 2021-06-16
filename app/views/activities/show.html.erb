@@ -1,28 +1,40 @@
-
 <%= link_to "<< Back to list of activities", activities_path, class: "revert-link" %>
-<h2 class="title-text"> <%=@activity.title%></h2>
+
+<h2 class="title-text">
+  <%=@activity.title%>
+</h2>
+
 <div class="card-product">
   <%= cl_image_tag @activity.photo.key %>
-  <div class="card-product-infos">
 
+  <div class="card-product-infos">
     <%= image_tag "profile-me.png", class: "card-trip-user avatar" %>
-      <div><i class="fa fa-map-marker location-icon"></i>
+
+    <div>
+      <i class="fa fa-map-marker location-icon"></i>
       <p class= "paragraph-location"> <%= @activity.location %> </p>
     </div>
-      <div><i class="far fa-calendar calendar-icon"></i>
+    <div>
+      <i class="far fa-calendar calendar-icon"></i>
       <p class= "paragraph-calendar"> <%=@activity.start_date%> to <%=@activity.end_date%> </p>
-     </div>
-
- <%= link_to "JOIN NOW", new_user_registration_path, class: "btn btn-primary show-link" %>
- <%= link_to "CHAT NOW",  chatroom_path(@chatroom.id), class: "btn btn-ghost ml-3 show-link" %>
- <%= simple_form_for @booking, url: activity_bookings_path(@activity), method: :post do |f| %>
-
-      <% end %>
-
     </div>
+
+    <%= link_to "JOIN NOW", new_user_registration_path, class: "btn btn-primary show-link" %>
+
+    <% if @chatroom.present? %>
+      <%= link_to "CHAT NOW", chatroom_path(@chatroom.id), class: "btn btn-ghost ml-3 show-link" %>
+    <% else %>
+      <%= simple_form_for [@activity, Chatroom.new] do |f| %>
+        <%= f.submit 'CHAT NOW', class: 'btn btn-ghost ml-3 show-link' %>
+      <% end %>
+    <% end %>
+
+    <%= simple_form_for @booking, url: activity_bookings_path(@activity), method: :post do |f| %>
+    <% end %>
   </div>
 </div>
-  <div id="map"
+
+<div id="map"
     style="height: 300px;"
     data-markers="<%= @markers.to_json %>"
     data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
