@@ -1,5 +1,8 @@
-<div class="container">
-    <div class="row my-2">
+
+<div class="background-profile">
+
+     <div class="container-profile">
+        <div class="row my-2">
         <div class="col-lg-8 order-lg-2">
             <ul class="nav nav-tabs">
                 <li class="nav-item">
@@ -12,9 +15,10 @@
                     <a href="" data-target="#edit" data-toggle="tab" class="nav-link">Edit</a>
                 </li>
             </ul>
+
             <div class="tab-content py-4">
                 <div class="tab-pane active" id="profile">
-                    <h5 class="mb-3"><%= @profile.first_name %> <%= @profile.last_name %></h5>
+                    <h5 class=" nom mb-3"><%= @profile.first_name %> <%= @profile.last_name %></h5>
                     <div class="row">
                         <div class="col-md-6">
                             <h6>About</h6>
@@ -39,7 +43,7 @@
                             <span class="badge badge-danger"><i class="fa fa-eye"></i> 245 Views</span>
                         </div>
                         <div class="col-md-12">
-                            <h5 class="mt-2"><span class="fa fa-clock-o ion-clock float-right"></span> Recent Activity</h5>
+                            <h5 class=" nom mt-2"><span class="fa fa-clock-o ion-clock float-right"></span> Recent Activity</h5>
                             <table class="table table-sm table-hover table-striped">
                                 <tbody>
                                     <tr>
@@ -108,44 +112,8 @@
                     </table>
                 </div>
 
+<%= link_to " Edit your profile", edit_profile_path, class: " btn btn-primary profile-btn fas fa-plus" %>
 
-
-                <div class="tab-pane" id="edit">
-                    <form role="form">
-                        <div class="form-group row">
-                            <%= simple_form_for @profile, url: profile_path, method: :path do |f| %>
-<div class="d-flex justify-content-between">.
-    <%= f.input :first_name %>
-   <%= f.input :last_name%>
-</div>
-
-    <%= f.input :age, collection: 18..60, prompt: "Select your age", selected: 21 %>
-
-    <div class="form-check">
-    <%= f.input :gender, as: :radio_buttons, collection: [['0', 'female'], ['1', 'male']], label_method: :second, value_method: :first, class: 'form-check-input' %>
-    </div>
-    <%= f.input :job_title %>
-    <%= f.input :language%>
-
-
-                        <div class="form-group row">
-
-</div>
-</div>
-
-                        <div class="form-group row">
-                            <label class="col-lg-3 col-form-label form-control-label"></label>
-                            <div class="col-lg-9">
-                                <input type="reset" class="btn btn-secondary" value="Cancel">
-                <%= f.button :submit, "Save Changes", class: 'btn btn-primary mb-2' %>
-              <% end %>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 order-lg-1 text-center">
 
 <div class="container-avatar mx-6 mt-5">
 <% if @profile.photo.present? %>
@@ -155,13 +123,12 @@
 <% end %>
 </div>
 
-
-
-            <h6 class="mt-2">Upload a different photo</h6>
+  <h6 class="mt-2">Upload a different photo</h6>
             <label class="custom-file">
                 <input type="file" id="file" class="custom-file-input">
                 <span class="custom-file-control">Choose file</span>
             </label>
         </div>
     </div>
+</div>
 </div>
