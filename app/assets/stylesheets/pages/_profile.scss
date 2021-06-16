@@ -14,6 +14,18 @@
 
 
 
+.main-content {
+    display: block;
+    margin-top: 92px;
+}
+
+
+
+.nom {
+
+    color: #023047;
+    margin-left: 2px;
+}
 
 
 
@@ -23,16 +35,27 @@
 
 
 
+.badge-danger {
+    color: #fff;
+    background-color: #e2a9aa;
+    font-size: 15px;
+        padding-right: 12px;
+}
 
 
+.badge-success {
+    color: #212529;
+    background-color: #f7d427;
+    font-size: 15px;
+}
 
 
-
-
-
-
-
-
+.badge-primary {
+    color: #212529;
+    background-color: #FB8500;
+    font-size: 15px;
+    margin-bottom: 3px;
+}
 
 .container-profile {
   margin: 100px 200px;

@@ -2,7 +2,7 @@
 <div class="container-edit-profile ">
 <div class="form-group mx-3 mb-2 ">
 
-<%= simple_form_for @profile, url: profile_path, method: :path do |f| %>
+<%= simple_form_for @profile, url: profile_path, method: :patch do |f| %>
 <div class="d-flex justify-content-between">.
     <%= f.input :first_name %>
    <%= f.input :last_name%>
