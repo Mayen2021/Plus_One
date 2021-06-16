@@ -147,7 +147,7 @@
         </div>
         <div class="col-lg-4 order-lg-1 text-center">
 
-<div class="container-avatar mx-6">
+<div class="container-avatar mx-6 mt-5">
 <% if @profile.photo.present? %>
 <%= cl_image_tag @profile.photo.key, height: 300, width: 400, crop: :fill, class: 'avatar-profile' %>
 <% else %>
