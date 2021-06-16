@@ -1,150 +1,142 @@
-.nav-link {
-    color: #fb8500;
+.container-my-profile{
+  margin: 100px auto;
+   align-items: center;
 }
 
 
-.nav-tabs .nav-link {
-    margin-bottom: -1px;
-    border: 1px solid #e9ecef;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
-}
-
-
-
-
-
-.main-content {
-    display: block;
-    margin-top: 92px;
-}
-
-
-
-.nom {
-
-    color: #023047;
-    margin-left: 2px;
-}
-
-
-
-
-
-
-
-
-
-.badge-danger {
-    color: #fff;
-    background-color: #e2a9aa;
-    font-size: 15px;
-        padding-right: 12px;
-}
-
-
-.badge-success {
-    color: #212529;
-    background-color: #f7d427;
-    font-size: 15px;
-}
-
-
-.badge-primary {
-    color: #212529;
-    background-color: #FB8500;
-    font-size: 15px;
-    margin-bottom: 3px;
-}
-
-.container-profile {
-  margin: 100px 200px;
-}
-
-.avatar-wrapper{
-  position: relative;
-  height: 200px;
-  width: 200px;
-  margin: 50px auto;
-  border-radius: 50%;
-  overflow: hidden;
-  box-shadow: 1px 1px 15px -5px black;
-  transition: all .3s ease;
-  &:hover{
-    transform: scale(1.05);
-    cursor: pointer;
-  }
-  &:hover .profile-pic{
-    opacity: .5;
-  }
-}
-
-
-.picture_profile {
-    height: 100%;
-    width: 100%;
-    transition: all .3s ease;
-    &:after{
-      font-family: FontAwesome;
-      content: "\f007";
-      top: 0; left: 0;
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      font-size: 190px;
-      background: #ecf0f1;
-      color: #34495e;
-      text-align: center;
-    }
-  }
-
-
-.background-my-profile {
-  background-color: orange;
-  border-radius : 10px;
-  height: 400px;
-  width: 209px;
-  color: white;
-  padding: 10px;
-}
 
 .my-history {
-  height: 400px;
-  width: 600px;
-  background-color: #fff8f4;
-  border-radius : 10px;
-}
-
-.container-my-profile {
-  margin: 100px 200px;
-}
-
-
-.my-title-history{
-  padding: 10px 20px;
+    width: 492px;
+    height: 280px;
+    border: none;
+    border-radius: 10px;
+   background-color: #fef8f4;
+   border-radius: 10px;
+   margin-left: 10px;
 }
 
 
-.list li {
-  list-style-type: none;
+
+
+.card-category-profile {
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fef8f4;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 
-.container-activity-user {
-background-color: white;
-height: 60px;
-width: 200px;
-border-radius: 10px;
-    margin-left: 10px;
-    margin-top: 10px;
+.card-trip-infos .card-trip-user {
+    position: absolute;
+    right: 15px;
+    top: 109px;
+    width: 233px;
 }
 
-.container-edit-profile {
-  padding-top: 10px;
-  margin: 100px 400px;
-  background-color: #fff8f4;
-  border-radius: 10px;
+
+.avatar-profile-p {
+    width: 194px;
+    border-radius: 50%;
+    height: 209px;
+}
+
+
+
+
+.card.p-3{
+    width: 570px;
+    border: none;
+        border-radius: 2px;
+    background-color: #fff;
+        margin-left: 51px;
+}
+
+.stats {
+    background: #f2f5f8 !important;
+    color: #000 !important
+}
+
+.articles {
+    font-size: 10px;
+    color: #a1aab9
+}
+
+.number1 {
+    font-weight: 500
+}
+
+.followers {
+    font-size: 10px;
+    color: #a1aab9
+}
+
+.number2 {
+    font-weight: 500
+}
+
+.rating {
+    font-size: 10px;
+    color: #a1aab9
+}
+
+.number3 {
+    font-weight: 500
+}
+.p-2.mt-2.bg-primary.d-flex.justify-content-between.rounded.text-white.stats {
+    color: #fb8500 !important;
+    position: absolute;
+    bottom: 23px;
+    right: 53px;
+    padding: 15px 10px;
+    width: 200px;
 
 }
 
+.prenom {
+  font-size: 48px;
+}
+
+.btn-sm, .btn-group-sm > .btn {
+    padding: 10px 15px;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border-radius: 7px;
+    margin: 10px;
+}
+
+.mb-0, .my-0 {
+    margin-bottom: 0 !important;
+    position: absolute;
+    top: 22px;
+}
+
+
+element.style {
+}
+
+.articles {
+    font-size: 10px;
+    color: #a1aab9;
+    margin-left: 5px;
+}
+
+.followers {
+    font-size: 10px;
+    color: #a1aab9;
+    padding-left: 5px;
+}
+
+.rating {
+    font-size: 10px;
+    color: #a1aab9;
+    padding-left: 5px;
+}
 
