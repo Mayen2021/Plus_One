@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row justify-content-center">
-    <div class="col-12 col-sm-4">
+    <div class="col-12 col-sm-4 background">
       <h3 class="create-title">We are PlusOne</h3>
 
       <div class="form-create">
@@ -10,8 +10,8 @@
         <%= f.input :title, as: :string, required: false, placeholder: "Hiking at Sintra",input_html: { class: "inline" } %>
         <%= f.input :description, as: :string, required: false, placeholder: "A full day hike around Sintra's major attractions", input_html: { class: "inline" } %>
         <%= f.input :location, as: :string, required: false, placeholder: "Sintra",  input_html: { class: "inline" } %>
-        <%= f.input :start_date, as: :date, required: false,  input_html: { class: "inline" } %>
-        <%= f.input :end_date, as: :date, required: false,  input_html: { class: "inline" } %>
+        <%= f.input :start_date, as: :date, required: false,  input_html: { class: "inline calendar far fa-calendar-times" } %>
+        <%= f.input :end_date, as: :date, required: false,  input_html: { class: "inline calendar far fa-calendar-times" } %>
         <%= f.input :photo, required: true,  input_html: { class: "inline" } %>
         <%= f.input :theme, collection: Theme.all, placeholder: "Select from list", input_html: { class: "inline" } %>
         <div >

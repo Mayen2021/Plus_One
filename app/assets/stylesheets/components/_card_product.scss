@@ -4,13 +4,10 @@
   background: #f3f3f3;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
-  align-items: center;
-  margin: 100px;
+  margin: 60px;
   border: 3px ridged #FB8500;
   margin-left: 200px;
   margin-right: 200px;
-  margin-top: 30px;
-  padding-top: 30px;
 }
 
 .card-product-infos {
@@ -20,12 +17,12 @@
 
 .card-product img {
   height: 120%;
-  width: 500px;
+  width: 400px;
   object-fit: cover;
 }
 
 .card-product .card-product-infos {
-  padding: 16px;
+
 }
 
 .show-text {
@@ -42,17 +39,28 @@
   font-size: 30px;
   font-weight: bold;
   text-align: center;
+  margin-top: 30px;
 }
 
-.paragraph-text {
+.paragraph-top {
   color: #023047;
   font-family: 'Open Sans', sans-serif;
   opacity: 0.8;
   font-size: 18px;
-  line-height: 0.7;
+  opacity: .7;
+  margin-left: 50px;
+  margin-top: 60px;
+}
+
+.paragraph-bottom {
+  color: #023047;
+  font-family: 'Open Sans', sans-serif;
+  opacity: 0.8;
+  font-size: 18px;
   opacity: .7;
   margin-bottom: 40px;
   margin-left: 50px;
+  margin-top: 60px;
 }
 
 .paragraph-header {
@@ -64,13 +72,13 @@
   opacity: .7;
    margin-left: 50px;
    font-weight: bold;
-   margin-bottom: 40px;
+   margin-top: 60px;
 }
 
 .show-link {
   display: inline;
   margin-left: 40px;
-  margin-bottom: 60px;
+  margin-bottom: 100px;
   color: white;
 }
 
@@ -84,22 +92,19 @@
   position: relative;
   align-items: flex-start;
   justify-content: space-between;
-  text-align: right;
-  margin-left: 380px;
-}
-
-.card-product-infos .card-trip-user {
-  right: 16px;
-  top: -20px;
+  right: auto;
   width: 60px;
-  margin-top: 15px;
+  left: 220px;
+  height: 60px;
+  margin-top: 40px;
 }
 
 .avatar {
+  height: 50px;
   width: 70px;
   border-radius: 50%;
   margin-right: 20px;
-  margin-top: 30px;
+  margin-top: 80px;
 }
 
 .avatar-text {
@@ -109,3 +114,32 @@
   padding-bottom: 10px;
   margin-right: 35px;
 }
+
+.calendar-icon {
+  position: absolute;
+  align-items: flex-start;
+  font-size: 36px;
+  color: #FB8500;
+  opacity: 0.7;
+  margin-left: 70px;
+}
+
+.paragraph-calendar {
+  margin-right: 50px;
+  padding-left: 120px;
+}
+
+location-icon {
+  position: absolute;
+  align-items: flex-start;
+  font-size: 36px;
+  color: #FB8500;
+  opacity: 0.7;
+  margin-left: 70px;
+}
+
+.paragraph-location {
+  margin-right: 50px;
+  padding-left: 120px;
+}
+
