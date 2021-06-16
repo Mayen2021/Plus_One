@@ -1,0 +1,42 @@
+.booking {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr ;
+//   grid-gap: 16px;
+}
+
+.booking-para {
+  text-align: center;
+  padding: 30px;
+  color: #E67E22;
+}
+
+.list-booking-item {
+  text-align: center;
+  text-decoration: none;
+  margin-right: 45px;
+  padding: 5px;
+  font-size: 16px;
+
+}
+
+.card-title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.booking-icon {
+  color: #E67E22;
+  opacity: 0.8;
+  padding: 10px;
+}
+
+.list-booking {
+  list-style: none;
+}
+
+// .booking-card {
+//   width: 200px;
+//   padding: 20px;
+//   border-radius: 3px;
+// }

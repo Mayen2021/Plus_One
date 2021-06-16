@@ -10,14 +10,18 @@ Rails.application.routes.draw do
       get :results
     end
 
+    resources :bookings, only: %i[create update]
+
+
     resources :bookings, only: %i[create]
     resources :chatrooms, only: :create
+
   end
 
   resources :chatrooms, only: %i[show] do
     resources :messages, only: %i[create]
 
-    resources :bookings, only: %i[create update]
+
 
   end
 
