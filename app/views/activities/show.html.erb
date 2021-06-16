@@ -13,24 +13,17 @@
       <p class= "paragraph-calendar"> <%=@activity.start_date%> to <%=@activity.end_date%> </p>
      </div>
 
-<<<<<<< HEAD
  <%= link_to "JOIN NOW", new_user_registration_path, class: "btn btn-primary show-link" %>
  <%= link_to "CHAT NOW",  chatroom_path(@chatroom.id), class: "btn btn-ghost ml-3 show-link" %>
  <%= simple_form_for @booking, url: activity_bookings_path(@activity), method: :post do |f| %>
 
-=======
-      <%= link_to "JOIN NOW", new_user_registration_path, class: "btn btn-primary show-link" %>
-      <%= link_to "CHAT NOW",  chatroom_path(@chatroom.id), class: "btn btn-ghost ml-3 show-link" %>
-      <%= simple_form_for @booking, url: activity_bookings_path(@activity), method: :post do |f| %>
->>>>>>> 43f1aee (button)
       <% end %>
 
     </div>
   </div>
 </div>
-
   <div id="map"
-    style="height: 400px;"
+    style="height: 300px;"
     data-markers="<%= @markers.to_json %>"
     data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
 </div>
