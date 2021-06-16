@@ -1,4 +1,11 @@
 
+.background {
+  background-color: #fef8f4;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+
 .form-login {
   background-color: white;
   padding: 10px 20px;
@@ -8,9 +15,6 @@
   border: 0.5px solid lightgray;
   }
 
-  .form-create {
-
-  }
 
 .create-title {
    padding-top: 40px;
@@ -33,7 +37,7 @@
 
  .inline {
   color: lighter;
-  background-color: #f2f2f2;
+  background-color: white;
   opacity: 0.9;
   font-size: 15px;
   font-family: 'Open Sans', sans-serif;
@@ -49,7 +53,7 @@
   background-color: #FCA94C;
   border-radius: 30px;
   border:none;
-  padding: 20px 15px;
+  padding: 10px 25px;
   color: white;
   margin-top: 20px;
   margin-bottom: 60px;

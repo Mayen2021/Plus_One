@@ -4,7 +4,6 @@
 
 .para {
  color: #023047;
- font-size: 15px;
 }
 
 .start-in {
@@ -23,10 +22,9 @@
   min-height: 137px;
 }
 
-.title {
+.title-card {
   font-weight: bold;
   color: #E67E22;
-  font-size: 17px;
 }
 
 .activity-title {
@@ -51,43 +49,51 @@ h5 {
   transition: box-shadow .3s;
   background-size: cover;
   background-position: center;
-  height: 130px;
+  height: 150px;
   width: 568px;
-  margin: 15px 0 20px 187px;
+  display: flex;
+  flex-direction: column;
+  max-height: 100px;
+  align-items: center;
   color: white;
   font-size: 24px;
   font-weight: bold;
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-  text-align: center;
   padding: 40px;
+  text-align: center;
 }
 
-.card-category-theme a {
+#theme a {
   text-decoration: none;
+  padding: 10px;
 }
 
+#theme {
+  margin-left: 90px;
+
+}
 
 .map-card-layout {
   display: flex;
   justify-content: space-between;
   background-color: #fff8f4;
   margin-top: 80px;
+  height: 80vh;
+  padding: 15px;
 }
 
 .create-btn {
-    text-decoration: none;
+  position: absolute;
+  text-decoration: none;
   background-color: #FCA94C;
   border-radius: 10px;
   border:none;
   padding: 10px 15px;
   color: white;
-  text-align: right;
-  margin-top: 20px;
-  position: absolute;
-  right: 115px;
-  top: 25%;
+  margin-top: 60px;
+  right: 120px;
 }
 
 

@@ -1,10 +1,8 @@
 <%= render "search_form" %>
 
-<%= link_to "Create your activity", new_activity_path, class: "create-btn" %>
-
 <div class="map-card-layout">
   <div id="theme">
-    <% Theme.all.sample(3).each do |theme| %>
+    <% Theme.all.sample(4).each do |theme| %>
       <%= link_to results_activities_path(theme: theme.name) do %>
         <div class="card-category-theme"  style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
           url(<%= asset_path("#{theme.name}.jpg") %>);">
@@ -15,13 +13,16 @@
   </div>
 
   <div id="map" class="map-index"
-       style="height: 400px; width: 700px"
+       style="height: 470px; width: 600px"
        data-markers="<%= @markers.to_json %>"
        data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
   </div>
 </div>
 
 
+<div>
+  <%= link_to "Create your activity", new_activity_path, class: "create-btn" %>
+</div>
 
 <h4 class="activity-title"> Activities near you </h4>
 

@@ -2,6 +2,10 @@
   position: relative;
 }
 
+.form-control {
+  border-radius: 5px;
+}
+
 .search-form-control .btn-search {
   position: absolute;
   top: 8px;
@@ -14,13 +18,26 @@
   height: 3.5rem;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
   border: 1px solid #E7E7E7;
-  margin: 50px 55px;
-  width: 88%;
+  margin: auto;
+  margin-top: 40px;
+  width: 60%;
 }
 
 .btn-search:not(:disabled):not(.disabled) {
     cursor: pointer;
     margin: 2px;
-    margin-right: 120px;
+    margin-right: 20%;
     padding: 7px;
+    width: 100px;
+}
+
+.search-result {
+  font-size: 23px;
+  margin: 25px auto;
+  padding: 5px;
+}
+
+.activity-title {
+  text-align: center;
+  margin-left: 10px;
 }
