@@ -37,7 +37,7 @@
 </div>
 <div class="avatar-place">
      <p id="avatar-text"><i class="fas fa-stopwatch countdown"></i>  <%= pluralize(@activity.days_to_start, 'day') %> to join me <i class="fas fa-stopwatch countdown"></i></p>
-     <% if @activity.user.profile.photo.attached? %>
+     <% if @activity.user.profile.present? && @activity.user.profile.photo.present? %>
      <%= cl_image_tag @activity.user.profile.photo.key , class: "show-avatar" %>
      <% else %>
      <%= image_tag "avatar.jpg", class: "show-avatar" %>
