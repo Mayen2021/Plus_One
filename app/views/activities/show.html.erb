@@ -16,18 +16,23 @@
       </div>
     </div>
     <div class="show-bar">
-       <%= link_to "JOIN NOW", new_user_registration_path, class: "btn btn-primary show-link" %>
 
-    <% if @chatroom.present? %>
-      <%= link_to "CHAT NOW", chatroom_path(@chatroom.id), class: "btn btn-ghost ml-3 show-link" %>
-    <% else %>
-      <%= simple_form_for [@activity, Chatroom.new] do |f| %>
-        <%= f.submit 'CHAT NOW', class: 'btn btn-ghost ml-3 show-link' %>
+      <% if @activity.user == current_user %>
+      <h3>You are the owner of the activity</h3>
+      <% else %>
+        <%= link_to "JOIN NOW", activity_bookings_path(@activity), method: :post, class: "btn btn-primary show-link" %>
+
+        <% if @chatroom.present? %>
+          <%= link_to "CHAT NOW", chatroom_path(@chatroom.id), class: "btn btn-ghost ml-3 show-link" %>
+        <% else %>
+          <%= simple_form_for [@activity, Chatroom.new] do |f| %>
+            <%= f.submit 'CHAT NOW', class: 'btn btn-ghost ml-3 show-link' %>
+          <% end %>
+        <% end %>
+        <%= simple_form_for @booking, url: activity_bookings_path(@activity), method: :post do |f| %>
+        <% end %>
       <% end %>
-    <% end %>
-    <%= simple_form_for @booking, url: activity_bookings_path(@activity), method: :post do |f| %>
-    <% end %>
-  </div>
+      </div>
 
 </div>
 <div class="avatar-place">

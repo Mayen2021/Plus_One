@@ -17,6 +17,7 @@ Message.destroy_all
 puts "create user"
 
 admin = User.create(email: "john.doe@gmail.com", password: "123456")
+user = User.create(email: "patricia@gmail.com", password: "123456")
 
 puts "create Chatroom"
 chatroom = Chatroom.create(name: "chat", user: admin)

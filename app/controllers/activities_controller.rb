@@ -6,6 +6,7 @@ class ActivitiesController < ApplicationController
       {lat: activity.latitude,
       lng: activity.longitude }
     end
+    @activities = @activities.sort_by{|e| e[:start_date]}
   end
 
   def new
