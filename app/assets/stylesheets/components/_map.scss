@@ -15,3 +15,18 @@ a {
   min-height: 400px;
   min-width: 400px;
 }
+
+.compact {
+    min-height: 20px;
+    padding: 2px 24px 2px 0;
+    margin: 10px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 12px;
+    display: none;
+}
+
+.mapboxgl-ctrl-attrib.mapboxgl-compact-show .mapboxgl-ctrl-attrib-inner, .mapboxgl-ctrl-attrib.mapboxgl-compact .mapboxgl-ctrl-attrib-button {
+    display: block;
+    display: none;
+}
