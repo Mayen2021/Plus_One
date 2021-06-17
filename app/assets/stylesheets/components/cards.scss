@@ -28,9 +28,10 @@
 }
 
 .activity-title {
-    margin-left: 187px;
+    margin-left: -899px;
     margin-top: 61px;
     color:#E67E22;
+
 }
 
 
@@ -69,23 +70,18 @@ h5 {
   padding: 10px;
 }
 
-#theme {
-  margin-left: 90px;
 
-}
 
 .map-card-layout {
-  display: flex;
-  justify-content: space-between;
-  background-color: #fff8f4;
-  margin-top: 80px;
-  height: 80vh;
-  padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff8f4;
+    margin-top: 80px;
+    padding: 0 190px;
 }
 
 .create-btn {
   position: absolute;
-  text-decoration: none;
   background-color: #FCA94C;
   border-radius: 10px;
   border:none;
@@ -93,7 +89,11 @@ h5 {
   color: white;
   margin-top: 60px;
   right: 120px;
+  margin-right: 86px;
 }
 
+ a.create-btn  {
+text-decoration: none;
+}
 
 
