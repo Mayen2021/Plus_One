@@ -18,7 +18,6 @@
           <li class="list-booking-item"><i class="fas fa-calendar-week booking-icon"></i> <%= activity.start_date %></li>
           <li class="list-booking-item"><i class="fas fa-calendar-week booking-icon"></i> <%= activity.end_date %></li>
           <li class="list-booking-item"><i class="fas fa-location booking-icon"></i><%= activity.location %></li>
-
         </ul>
 
 
@@ -26,7 +25,7 @@
           <div class="card-body join-bu">
             <% if booking.pending? %>
             <%= simple_form_for [activity, booking], method: :patch do |f| %>
-            <%= f.button :submit, "accept", class: 'btn btn-primary' %>
+            <%= f.button :submit, "Accept", class: 'btn btn-primary' %>
             <% end %>
             <% end %>
           </div>
