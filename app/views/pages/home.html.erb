@@ -3,29 +3,30 @@
   <div class="home-text">
     <h2 id="banner-heading">Your buddy finder</h2>
     <p class="wrap">PlusOne helps you to connect with people nearby who <br> share your interests so you don’t always have to do activities alone</p>
-     <button class="btn btn-primary banner-link"><%= link_to "Learn more", activities_path  %></button>
+     <button class="btn btn-primary banner-link"><%= link_to "See more", activities_path  %></button>
   </div>
 </div>
 
 <div class="container">
-  <div class="my-3">
-    <h3>Latest activities</h3>
-    <div class="row">
-      <% @activities.each do |activity| %>
-        <div class="col-4">
-          <%= link_to activity_path(activity), class:'text-decoration-none' do %>
-            <div class="card-category">
-              <div class="m-4">
-                <%= cl_image_tag(activity.photo.key, width: 350, height: 200, crop: :fill, class: 'img-fluid') %>
-                <div class="body-card d-flex">
-                  <div class="d-flex">
-                    <p class="title flex-grow-1">
-                      <%= activity.title %>
-                    </p>
-                    <p class="para start-in">
-                      Starts in <%= pluralize(activity.days_to_start, 'day') %>
-                    </p>
-                  </div>
+<div class="my-3">
+  <h3 class="activities-header">Latest activities</h3>
+  <div class="row">
+    <% @activities.each do |activity| %>
+      <div class="col-4">
+        <%= link_to activity_path(activity), class:'text-decoration-none' do %>
+          <div class="card-category">
+            <div class="m-4">
+              <%= cl_image_tag(activity.photo.key, width: 350, height: 200, crop: :fill, class: 'img-fluid') %>
+              <div class="body-card d-flex">
+                <div class="d-flex">
+                  <p class="title flex-grow-1">
+                    <%= activity.title %>
+                  </p>
+                  <p class="para start-in">
+                    Starts in <%= pluralize(activity.days_to_start, 'day') %>
+                  </p>
+                </div>
+
 
                   <p class="para"> <%= activity.location %></p>
                 </div>
@@ -37,10 +38,10 @@
     </div>
   </div>
 
+
   <div>
     <h2 id="container-header">Getting started</h2>
   </div>
-
   <div class="cards">
     <div class="card icon">
       <i class="fas fa-edit"></i>
@@ -51,7 +52,6 @@
 
       <%= link_to "Create Profile", new_user_registration_path, class: "btn btn-primary info-link" %>
     </div>
-
 
     <div class="card icon">
       <i class="fas fa-scroll"></i>
