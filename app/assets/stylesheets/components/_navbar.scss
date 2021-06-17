@@ -9,7 +9,7 @@
     position: sticky;
     top: 0;
     z-index: 1;
-    height: 65px;
+    height: 75px;
 }
 
 .navbar-brand img {
@@ -52,3 +52,10 @@
   text-decoration: none;
 }
 
+
+.logo-website {
+    vertical-align: middle;
+    border-style: none;
+    max-width: 130px;
+    margin-top: 10px;
+}
