@@ -18,15 +18,15 @@
     <div class="show-bar">
 
       <% if @activity.user == current_user %>
-      <h3>You are the owner of the activity</h3>
+      <h3 id="activity-owner">You are the owner of the activity</h3>
       <% else %>
-        <%= link_to "JOIN NOW", activity_bookings_path(@activity), method: :post, class: "btn btn-primary show-link" %>
+        <%= link_to "Join me", activity_bookings_path(@activity), method: :post, class: "btn btn-primary show-link" %>
 
         <% if @chatroom.present? %>
-          <%= link_to "CHAT NOW", chatroom_path(@chatroom.id), class: "btn btn-ghost ml-3 show-link" %>
+          <%= link_to "Chat now", chatroom_path(@chatroom.id), class: "btn btn-ghost ml-3 show-link" %>
         <% else %>
           <%= simple_form_for [@activity, Chatroom.new] do |f| %>
-            <%= f.submit 'CHAT NOW', class: 'btn btn-ghost ml-3 show-link' %>
+            <%= f.submit 'Chat now', class: 'btn btn-ghost ml-3 show-link' %>
           <% end %>
         <% end %>
         <%= simple_form_for @booking, url: activity_bookings_path(@activity), method: :post do |f| %>
@@ -37,7 +37,11 @@
 </div>
 <div class="avatar-place">
      <p id="avatar-text"><i class="fas fa-stopwatch countdown"></i>  <%= pluralize(@activity.days_to_start, 'day') %> to join me <i class="fas fa-stopwatch countdown"></i></p>
-     <%= image_tag "profile-me.png", class: "show-avatar" %>
+     <% if @activity.user.profile.photo.attached? %>
+     <%= cl_image_tag @activity.user.profile.photo.key , class: "show-avatar" %>
+     <% else %>
+     <%= image_tag "avatar.jpg", class: "show-avatar" %>
+     <% end  %>
   </div>
 </div>
 </div>
