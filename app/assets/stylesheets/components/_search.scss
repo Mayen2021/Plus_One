@@ -29,6 +29,7 @@
     margin-right: 20%;
     padding: 7px;
     width: 100px;
+
 }
 
 .search-result {
@@ -39,5 +40,10 @@
 
 .activity-title {
   text-align: center;
-  margin-left: 10px;
+  margin-left: 192px;
+}
+
+.header-activity-show {
+  display: flex;
+  align-items: center;
 }

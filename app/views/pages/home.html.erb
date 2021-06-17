@@ -6,6 +6,7 @@
      <button class="btn btn-primary banner-link"><%= link_to "See more", activities_path  %></button>
   </div>
 </div>
+
 <div class="container">
 <div class="my-3">
   <h3 class="activities-header">Latest activities</h3>
@@ -26,37 +27,50 @@
                   </p>
                 </div>
 
-                <p class="para"> <%= activity.location %></p>
+
+                  <p class="para"> <%= activity.location %></p>
+                </div>
               </div>
             </div>
-          </div>
-        <% end %>
-      </div>
-    <% end %>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
   </div>
-</div>
-
-      <div><h2 id="container-header">Getting started</h2></div>
-      <div class="cards">
-            <div class="card fas fa-edit icon">
-              <h3 class="action-header">Create profile</h3>
-          <p class="action-text">Set up your profile and connect with other users. It’s simple and easy!</p>
-          <%= link_to "Create Profile", new_profile_path, class: "btn btn-primary info-link" %>
-        </div>
 
 
-          <div class="card fas fa-scroll icon">
-            <h3 class="action-header">Find your activity</h3>
-          <p class="action-text">Browse list of activities to find a matching buddy or create your own activity.</p>
-          <%= link_to "Find activities", activities_path, class: "btn btn-primary info-link" %>
-        </div>
+  <div>
+    <h2 id="container-header">Getting started</h2>
+  </div>
+  <div class="cards">
+    <div class="card icon">
+      <i class="fas fa-edit"></i>
+      <h3 class="action-header">Create profile</h3>
+      <p class="action-text">
+        Set up your profile and connect with other users. It’s simple and easy!
+      </p>
 
+      <%= link_to "Create Profile", new_user_registration_path, class: "btn btn-primary info-link" %>
+    </div>
 
-          <div class="card fas fa-thumbs-up icon">
-            <h3 class="action-header">Confirm your activity</h3>
-          <p class="action-text">Confirm activity with your buddy. Use the chat feature to request more information.</p>
-           <%= link_to "Confirm activity", bookings_path, class: "btn btn-primary info-link" %>
-        </div>
-      </div>
+    <div class="card icon">
+      <i class="fas fa-scroll"></i>
+      <h3 class="action-header">Find your activity</h3>
+      <p class="action-text">
+        Browse list of activities to find a matching buddy or create your own activity.
+      </p>
+
+      <%= link_to "Find activities", activities_path, class: "btn btn-primary info-link" %>
+    </div>
+
+    <div class="card icon">
+      <i class="fas fa-thumbs-up"></i>
+      <h3 class="action-header">Confirm your activity</h3>
+      <p class="action-text">
+        Confirm activity with your buddy. Use the chat feature to request more information.
+      </p>
+       <%= link_to "Confirm activity", activities_path, class: "btn btn-primary info-link" %>
+    </div>
+  </div>
 </div>
 
