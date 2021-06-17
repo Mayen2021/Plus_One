@@ -3,6 +3,7 @@ class BookingsController < ApplicationController
     @booking = Booking.new
     @my_created_activities = current_user.activities
     @bookings_made = current_user.bookings
+
   end
 
   def create

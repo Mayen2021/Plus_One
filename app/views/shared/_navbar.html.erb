@@ -7,9 +7,10 @@
 
   <div class="collapse navbar-collapse flex-nav" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
+
       <% if user_signed_in? %>
         <% if current_user.profile.present? %>
-
+        <p>Welcome <%= current_user.profile.first_name %> </p>
         <%= link_to "MY PROFILE", profile_path(current_user.profile), class: "navg-link" %>
         <%= link_to "MY BOOKINGS", bookings_path, class: "navg-link" %>
         <% else %>
