@@ -1,4 +1,4 @@
-.card__ {
+.card {
   height: 280px;
   width: 280px;
   border-radius: 50%;
@@ -9,11 +9,10 @@
 }
 
 .cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 25px;
   justify-items: center;
   align-items: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 @media (max-width: 960px) {
