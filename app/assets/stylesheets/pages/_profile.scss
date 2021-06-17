@@ -1,15 +1,13 @@
-.container-my-profile{
+.container-my-profile {
   margin: 100px auto;
-   align-items: center;
+  align-items: center;
 }
-
 
 .list {
- font-family: 'Work Sans', sans-serif;
+  font-family: 'Work Sans', sans-serif;
+  padding: 0;
+  list-style-type: none;
 }
-
-
-
 
 .card-category-profile {
   background-size: cover;
@@ -29,41 +27,31 @@
 
 .card-trip-infos .card-trip-user {
     position: absolute;
-    right: 15px;
+    right: 32px;
     top: 109px;
-    width: 233px;
-
 }
-
 
 .avatar-profile-p {
-    width: 194px;
     border-radius: 50%;
-    height: 209px;
+    object-fit: cover;
 }
-
-
-
 
 .carddy{
     width: 670px;
     border: none;
     border-radius: 2px;
     background-color: #fff;
-    margin-left: 51px;
     height: 180px;
     box-shadow: 1px 5px #f2f2f2
 }
 
-
 .my-history {
-   width: 670px;
-   background-color: #fff;
+    width: 670px;
+    background-color: #fff;
     border-radius: 2px;
-    margin-left: 210px;
-    height: 180px;
     box-shadow: 1px 5px #f2f2f2;
     margin-top: 5px;
+    padding-left: 32px;
 }
 
 .stats {
@@ -97,14 +85,13 @@
 .number3 {
     font-weight: 500
 }
-.p-2.mt-2.bg-primary.d-flex.justify-content-between.rounded.text-white.stats {
+.rounded.text-white.stats {
     color: #fb8500 !important;
     position: absolute;
-    bottom: 347px;
-    right: 23px;
+    bottom: 436px;
+    right: 48px;
     padding: 15px 10px;
     width: 200px;
-
 }
 
 
@@ -127,6 +114,11 @@
     top: 22px;
 }
 
+
+.button-orange  {
+  background-color: orange;
+  color: white;
+}
 
 
 
