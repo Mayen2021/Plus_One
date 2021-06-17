@@ -13,6 +13,7 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
+  padding-bottom: 35px;
 }
 
 @media (max-width: 960px) {
@@ -40,11 +41,10 @@
 }
 
 .card .action-text {
-  font-size: 16px;
+  font-size: 15px;
   text-decoration: none;
   text-align: center;
   color: #023047;
-  opacity: 0.7;
   margin-bottom: 20px;
   width: 80%;
   font-family: 'Open Sans', sans-serif;
@@ -76,4 +76,13 @@
 
 .info-link {
   margin-bottom: 40px;
+  color: #FB8500;
+}
+
+.activities-header {
+  text-align: center;
+   color: #023047;
+  font-family: 'Roboto', sans-serif;
+  opacity: 0.8;
+  padding-top: 20px;
 }

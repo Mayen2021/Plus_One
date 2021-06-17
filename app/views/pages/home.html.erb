@@ -3,12 +3,12 @@
   <div class="home-text">
     <h2 id="banner-heading">Your buddy finder</h2>
     <p class="wrap">PlusOne helps you to connect with people nearby who <br> share your interests so you don’t always have to do activities alone</p>
-     <button class="btn btn-primary banner-link"><%= link_to "Learn more", activities_path  %></button>
+     <button class="btn btn-primary banner-link"><%= link_to "See more", activities_path  %></button>
   </div>
 </div>
 <div class="container">
 <div class="my-3">
-  <h3>Latest activities</h3>
+  <h3 class="activities-header">Latest activities</h3>
   <div class="row">
     <% @activities.each do |activity| %>
       <div class="col-4">
@@ -41,7 +41,7 @@
             <div class="card fas fa-edit icon">
               <h3 class="action-header">Create profile</h3>
           <p class="action-text">Set up your profile and connect with other users. It’s simple and easy!</p>
-          <%= link_to "Create Profile", new_user_registration_path, class: "btn btn-primary info-link" %>
+          <%= link_to "Create Profile", new_profile_path, class: "btn btn-primary info-link" %>
         </div>
 
 
@@ -55,7 +55,7 @@
           <div class="card fas fa-thumbs-up icon">
             <h3 class="action-header">Confirm your activity</h3>
           <p class="action-text">Confirm activity with your buddy. Use the chat feature to request more information.</p>
-           <%= link_to "Confirm activity", activities_path, class: "btn btn-primary info-link" %>
+           <%= link_to "Confirm activity", bookings_path, class: "btn btn-primary info-link" %>
         </div>
       </div>
 </div>
