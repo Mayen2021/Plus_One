@@ -9,11 +9,11 @@
     position: sticky;
     top: 0;
     z-index: 1;
-    height: 45px;
+    height: 55px;
 }
 
 .navbar-brand img {
-  height: 173px;
+  height: 183px;
   margin-top: 10px;
   border: none;
 }
@@ -38,6 +38,16 @@
 }
 
 .navg-link {
-  padding: 8px;
-  padding-top: 10px;
+    padding: 8px;
+    padding-top: 10px;
+    padding-right: 28px;
+}
+
+.welcome-user {
+  margin-right: 330px;
+  margin-top: 11px;
+}
+
+.navbar-nav.mr-auto a {
+  text-decoration: none;
 }
