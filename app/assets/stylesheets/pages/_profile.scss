@@ -22,6 +22,7 @@
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin-top: 20px;
 }
 
 
@@ -79,7 +80,7 @@
 
 .rating {
     font-size: 10px;
-    color: #a1aab9
+    color: #a1aab9;
 }
 
 .number3 {
@@ -92,7 +93,9 @@
     right: 48px;
     padding: 15px 10px;
     width: 200px;
+    text-align: center;
 }
+
 
 
 
@@ -150,4 +153,8 @@ max-width: 100%;
 .container-activity-user li {
     list-style-type: none;
 
+}
+
+.about-me {
+  color: blue;
 }
