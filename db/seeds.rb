@@ -44,6 +44,7 @@ url1 = "https://res.cloudinary.com/dseegocw7/image/upload/v1623153975/hikes_jkh2
 
 activity1 = Activity.create(
    title: "A Unique Hike",
+   description: "Let's meet in the Mount Loretto Unique Area parking lot. We'll walk the grasslands and the beach, then head over to the food trucks for a bite to eat.",
    start_date: Date.today + 23,
    end_date: Date.today + 24,
    location: "Rua das Flores, Lisboa",
@@ -54,28 +55,25 @@ puts "one created"
 file = URI.open(url1)
 activity1.photo.attach(io: file, filename: url1, content_type: 'image/jpg')
 activity1.save!
-
-
 # 2 activity
 url2 = "https://res.cloudinary.com/dseegocw7/image/upload/v1623154761/drinks_eegqen.jpg"
 activity2 = Activity.create!(
    title: "Friday Drinks",
+   description: "Let's gather again for drinks and a chat.",
    start_date: Date.today + 9,
    end_date:  Date.today + 9,
    location: "Rua de S. Paulo, Lisboa",
    theme: drinks,
    user: admin
   )
-
 file = URI.open(url2)
 activity2.photo.attach(io: file, filename: url2, content_type: 'image/jpg')
 activity2.save!
-
-
 # 3 activity
 url3 = "https://res.cloudinary.com/dseegocw7/image/upload/v1623153973/dance_jdosqy.jpg"
 activity3 = Activity.create!(
    title: "Free dance class",
+   description: "Hey, I would love to meet someone that also loves to dance. I've been thinking about doing dance class for ages! Looking forward to meeting you.",
    start_date:  Date.today + 13,
    end_date: Date.today + 13,
    location: "R. dos Remolares 34, 1200-371 Lisboa",
@@ -85,11 +83,11 @@ activity3 = Activity.create!(
 file = URI.open(url3)
 activity3.photo.attach(io: file, filename: url3, content_type: 'image/jpg')
 activity3.save!
-
 # 4 activity
 url4 = "https://res.cloudinary.com/dseegocw7/image/upload/v1623153974/yoga_bnpdtz.jpg"
 activity4 = Activity.create!(
    title: "Saturday yoga",
+   description: "The program is about mindful breathing and gentle core work and balance poses, ending with relaxation. Would love a buddy to join me.",
    start_date: Date.today + 16,
    end_date:  Date.today + 16,
    location: "R. Gaivotas 17, 1200-719 Lisboa",
@@ -99,13 +97,11 @@ activity4 = Activity.create!(
 file = URI.open(url4)
 activity4.photo.attach(io: file, filename: url4, content_type: 'image/jpg')
 activity4.save!
-
-
-
 # # 5 activity
 url5 = "https://res.cloudinary.com/dseegocw7/image/upload/v1623153973/japanese_ohf1bi.jpg"
 activity5 = Activity.create!(
  title: "Learn Japanese language",
+ description: "I would love to find a buddy that can teach me a bit of Japanese around a drink or a coffee. I'm from France, so I could also exchange some French lessons.",
  start_date: Date.today + 21,
  end_date: Date.today + 21,
  location: "Rua Santos-O-Velho, Lisboa",
@@ -115,12 +111,11 @@ activity5 = Activity.create!(
 file = URI.open(url5)
 activity5.photo.attach(io: file, filename: url5, content_type: 'image/jpg')
 activity5.save!
-
-
 # # 6 activity
 url6 = "https://res.cloudinary.com/dseegocw7/image/upload/v1623153973/foodie_c3737h.jpg"
 activity6 = Activity.create!(
  title: "Tipsy Foodies in Lisbon",
+ description: "Whether you're simply an enthusiastic diner with no clue how to boil an egg or a budding chef who could give Gordon Ramsay a run for his money, this activity is for YOU, looking forward to meeting someone for this activity.",
  start_date: Date.today + 26,
  end_date: Date.today + 26,
  location: "Rua Nova da Piedade,Lisboa",
@@ -130,11 +125,11 @@ activity6 = Activity.create!(
 file = URI.open(url6)
 activity6.photo.attach(io: file, filename: url6, content_type: 'image/jpg')
 activity6.save!
-
 # # 7 activity
 url7 = "https://res.cloudinary.com/dseegocw7/image/upload/v1623159541/mason-dahl--7AxXbZekDE-unsplash_gpyemx.jpg"
 activity7 = Activity.create!(
 title: "Friday Evening Picnic",
+description: "Come and join me for a fun and relaxing sunset picnic. Bring some drinks, snacks, games, whatever you like.",
 start_date: Date.today + 2,
 end_date: Date.today + 2,
 location: "Rua das Flores de Santa Cruz, Lisboa",
@@ -144,12 +139,11 @@ theme: outdoor,
 file = URI.open(url7)
 activity7.photo.attach(io: file, filename: url7, content_type: 'image/jpg')
 activity7.save!
-
-
 # # 8 activity
 url8 = "https://res.cloudinary.com/dseegocw7/image/upload/v1623153972/volley_osqdrr.jpg"
 activity8 = Activity.create!(
 title: "Grass Volleyball",
+description: "Do you fancy playing grass-volleyball on a sunny evening with nice people? I'm looking for a teammate!",
 start_date: Date.today + 8,
 end_date: Date.today + 8,
 location: "Rua de São Bento, Lisboa",
@@ -159,12 +153,11 @@ theme: sport,
 file = URI.open(url8)
 activity8.photo.attach(io: file, filename: url8, content_type: 'image/jpg')
 activity8.save!
-
-
 # # 9 activity
 url9 = "https://res.cloudinary.com/dseegocw7/image/upload/v1623153972/picnic_yqlzjb.jpg"
 activity9 = Activity.create!(
 title: "Pilates Mat outdoors",
+description: "I am looking for a buddy to join a Pilates class with me, this Thursday. Hope you can join.",
 start_date: Date.today + 10,
 end_date: Date.today + 10,
 location: "2825-412 Costa da Caparica",
@@ -174,12 +167,11 @@ theme: wellness,
 file = URI.open(url9)
 activity9.photo.attach(io: file, filename: url9, content_type: 'image/jpg')
 activity9.save!
-
-
 # # 10 activity
 url10 = "https://res.cloudinary.com/dseegocw7/image/upload/v1623153972/surf_q0dip5.jpg"
 activity10 = Activity.create!(
 title: "Let´s go surfing!",
+description: "Hey buddy, I will go for the first time surfing in Caparica this weekend and I would love to have some to join me on this adventure.",
 start_date:  Date.today + 9,
 end_date:  Date.today + 9,
 location: "2825-412 Costa da Caparica",
@@ -189,13 +181,11 @@ theme: sport,
 file = URI.open(url10)
 activity10.photo.attach(io: file, filename: url10, content_type: 'image/jpg')
 activity10.save!
-
-
-
 # # 11 activity
 url11 = "https://res.cloudinary.com/dseegocw7/image/upload/v1623153972/cinema_mpnxah.jpg"
 activity11 = Activity.create!(
 title: "Movie night",
+description: "I would love to go to the cinema this weekend, there is amazing programming about all black and white movies, if someone would love to join.",
 start_date:  Date.today + 24,
 end_date:   Date.today + 24,
 location: "Largo do Corpo Santo , Lisbon",
@@ -205,11 +195,11 @@ theme: entertainment,
 file = URI.open(url11)
 activity11.photo.attach(io: file, filename: url11, content_type: 'image/jpg')
 activity11.save!
-
-
+# # 12 activity
 url12 = "https://res.cloudinary.com/dseegocw7/image/upload/v1623153972/concert_dnikxz.jpg"
 activity12 = Activity.create!(
 title: "Thursday Weekly Jam",
+description: "Hello! I'm a big fan of music. My favorite band will play this Thursday and would love someone to join me."
 start_date:  Date.today + 27,
 end_date:  Date.today + 27,
 location: "Rua de São Bernardo 33, Santos, Lisbon",

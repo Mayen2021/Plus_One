@@ -25,10 +25,8 @@
 }
 
 
-.card-trip-infos .card-trip-user {
-    position: absolute;
-    right: 32px;
-    top: 109px;
+.card-trip-user {
+  margin-top: -50px;
 }
 
 .avatar-profile-p {
@@ -87,9 +85,6 @@
 }
 .rounded.text-white.stats {
     color: #fb8500 !important;
-    position: absolute;
-    bottom: 436px;
-    right: 48px;
     padding: 15px 10px;
     width: 200px;
 }
