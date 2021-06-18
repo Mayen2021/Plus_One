@@ -207,7 +207,6 @@ activity11.photo.attach(io: file, filename: url11, content_type: 'image/jpg')
 activity11.save!
 
 
-# # 12 activity
 url12 = "https://res.cloudinary.com/dseegocw7/image/upload/v1623153972/concert_dnikxz.jpg"
 activity12 = Activity.create!(
 title: "Thursday Weekly Jam",
@@ -221,5 +220,166 @@ file = URI.open(url12)
 activity12.photo.attach(io: file, filename: url12, content_type: 'image/jpg')
 activity12.save!
 
+
+puts "new activities uploading..."
+
+url13 = "https://res.cloudinary.com/dseegocw7/image/upload/v1624006882/michael-discenza-MxfcoxycH_Y-unsplash_p5na9l.jpg"
+activity13 = Activity.create!(
+title: "Drinks on a rooftop",
+description: "Lets have some drinks on a rooftop!",
+start_date:  Date.today + 2,
+end_date:  Date.today + 2,
+location: "Rua de São Bernardo 33, Santos, Lisbon",
+theme: nightlife,
+   user: admin
+)
+file = URI.open(url13)
+activity13.photo.attach(io: file, filename: url13, content_type: 'image/jpg')
+activity13.save!
+
+
+url14 = "https://res.cloudinary.com/dseegocw7/image/upload/v1624006898/long-truong-Y5PXVs1LpY4-unsplash_qaqoxx.jpg"
+activity14 = Activity.create!(
+title: "Lux fragil on saturday",
+description: "I would love to go to this nightclub that we call Lux Fragil, someone is keen?
+",
+start_date:  Date.today + 8,
+end_date:  Date.today + 8,
+location: " Av. Infante D. Henrique a Sta Apolónia Cais da Pedra, Armazém A, Lisboa",
+theme: nightlife,
+   user: admin
+)
+file = URI.open(url14)
+activity14.photo.attach(io: file, filename: url14, content_type: 'image/jpg')
+activity14.save!
+
+
+url15 = "https://res.cloudinary.com/dseegocw7/image/upload/v1624006888/humphrey-muleba-cUUvJlhiceU-unsplash_ojkyy5.jpg"
+activity15 = Activity.create!(
+title: "Pool party at night!",
+description: "I've got two invitation for this pool party on friday it's on the top of a bar, who wants to come? ",
+start_date:  Date.today + 2,
+end_date:  Date.today + 2,
+location: "Rua de São Bernardo 33, Santos, Lisbon",
+theme: nightlife,
+   user: admin
+)
+file = URI.open(url15)
+activity15.photo.attach(io: file, filename: url15, content_type: 'image/jpg')
+activity15.save!
+
+url16 = "https://res.cloudinary.com/dseegocw7/image/upload/v1624006893/emiliano-vittoriosi-5kWpPKOJSbE-unsplash_lzsik2.jpg"
+activity16 = Activity.create!(
+title: "Clubbing in Alfama!",
+description: "This new club has opened, I want to check there!
+",
+start_date:  Date.today + 19,
+end_date:  Date.today + 19,
+location: "Praça do Comércio 72, 1100-413 Lisbonne",
+theme: nightlife,
+   user: admin
+)
+file = URI.open(url16)
+activity16.photo.attach(io: file, filename: url16, content_type: 'image/jpg')
+activity16.save!
+
+url17 = "https://res.cloudinary.com/dseegocw7/image/upload/v1624006878/moritz-mentges-Z40sav8IYqQ-unsplash_yx7ugd.jpg"
+activity17 = Activity.create!(
+title: "Night out electro club",
+description: "A new club has just opened in town, who wants to try?",
+start_date:  Date.today + 7,
+end_date:  Date.today + 7,
+location: "Rua de São Bernardo 33, Santos, Lisbon",
+theme: nightlife,
+   user: admin
+)
+file = URI.open(url17)
+activity17.photo.attach(io: file, filename: url17, content_type: 'image/jpg')
+activity17.save!
+
+url18 = "https://res.cloudinary.com/dseegocw7/image/upload/v1624007158/danny-howe-bn-D2bCvpik-unsplash_rtnkfk.jpg"
+activity18 = Activity.create!(
+title: "Night out in Lisbon",
+description: "Hey buddy, there is this new DJ playing,... let's join?",
+start_date:  Date.today + 19,
+end_date:  Date.today + 19,
+location: "Rua de São Bernardo 33, Santos, Lisbon",
+theme: nightlife,
+   user: admin
+)
+file = URI.open(url18)
+activity18.photo.attach(io: file, filename: url18, content_type: 'image/jpg')
+activity18.save!
+
+
+url19 = "https://res.cloudinary.com/dseegocw7/image/upload/v1624006904/kike-vega-F2qh3yjz6Jk-unsplash_wmaqao.jpg"
+activity19 = Activity.create!(
+title: "Yoga on the beach",
+description: "Let's do yoga on the beach",
+start_date:  Date.today + 9,
+end_date:  Date.today + 9,
+location: "Caparica",
+theme: wellness,
+   user: admin
+)
+file = URI.open(url19)
+activity19.photo.attach(io: file, filename: url19, content_type: 'image/jpg')
+activity19.save!
+
+url20 = "https://res.cloudinary.com/dseegocw7/image/upload/v1624006904/kike-vega-F2qh3yjz6Jk-unsplash_wmaqao.jpg"
+activity20 = Activity.create!(
+title: "Baraza yoga for beginners",
+description: "Wanna try this new studio with someone!",
+start_date:  Date.today + 2,
+end_date:  Date.today + 2,
+location: "Caparica",
+theme: wellness,
+   user: admin
+)
+file = URI.open(url20)
+activity20.photo.attach(io: file, filename: url20, content_type: 'image/jpg')
+activity20.save!
+
+url21 = "https://res.cloudinary.com/dseegocw7/image/upload/v1624006913/zen-bear-yoga-IVf7hm88zxY-unsplash_y5af4e.jpg"
+activity21 = Activity.create!(
+title: "Baraza yoga for beginners",
+description: "Wanna try this new studio with someone!",
+start_date:  Date.today + 8,
+end_date:  Date.today + 8,
+location: "Caparica",
+theme: wellness,
+   user: admin
+)
+file = URI.open(url21)
+activity21.photo.attach(io: file, filename: url21, content_type: 'image/jpg')
+activity21.save!
+
+url22 = "https://res.cloudinary.com/dseegocw7/image/upload/v1624006929/mr-tt-xb0wLfZH9Zo-unsplash_ncwjfg.jpg"
+activity22 = Activity.create!(
+title: "Exhibition of a new artist",
+description: "Pablo Elero is doing a Exhibition, would love to go with someone!",
+start_date:  Date.today + 5,
+end_date:  Date.today + 5,
+location: "Lisbon",
+theme: art,
+   user: admin
+)
+file = URI.open(url22)
+activity22.photo.attach(io: file, filename: url22, content_type: 'image/jpg')
+activity22.save!
+
+url23 = "https://res.cloudinary.com/dseegocw7/image/upload/v1624006932/debby-hudson-MzSqFPLo8CE-unsplash_nfwtth.jpg"
+activity23 = Activity.create!(
+title: "Painting class with someone",
+description: "Hey guys, I am looking for someone to go on a painting class with me. ",
+start_date:  Date.today + 5,
+end_date:  Date.today + 5,
+location: "Av. Afonso de Albuquerque, S. João de Caparica, 2825-450 Costa da Caparica",
+theme: art,
+   user: admin
+)
+file = URI.open(url23)
+activity23.photo.attach(io: file, filename: url23, content_type: 'image/jpg')
+activity23.save!
 
 puts "finished seeds"
