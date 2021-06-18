@@ -199,7 +199,7 @@ activity11.save!
 url12 = "https://res.cloudinary.com/dseegocw7/image/upload/v1623153972/concert_dnikxz.jpg"
 activity12 = Activity.create!(
 title: "Thursday Weekly Jam",
-description: "Hello! I'm a big fan of music. My favorite band will play this Thursday and would love someone to join me."
+description: "Hello! I'm a big fan of music. My favorite band will play this Thursday and would love someone to join me.",
 start_date:  Date.today + 27,
 end_date:  Date.today + 27,
 location: "Rua de São Bernardo 33, Santos, Lisbon",
